@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: BizDevOps Business Capability Research
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Guillermo
+    family-names: Fuentes-Quijada
+    email: guillermo.fuentes@uclm.es
+    affiliation: University of Castilla-La Mancha
+    orcid: 'https://orcid.org/0000-0002-0798-5186'
+  - given-names: Francisco
+    family-names: Ruiz
+    email: francisco.ruizg@uclm.es
+    affiliation: University of Castilla-La Mancha
+    orcid: 'https://orcid.org/0000-0002-4923-7848'
+  - given-names: Angélica
+    family-names: Caro
+    email: mcaro@ubiobio.cl
+    affiliation: University of Bío-Bío
+    orcid: 'https://orcid.org/0000-0002-2066-7131'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.12565593
+abstract: >-
+  This study investigates the transition from DevOps to
+  BizDevOps, focusing on the utilization of business
+  capabilities to improve IT and business alignment. The
+  goal is to develop a structured approach that facilitates
+  this transition and ensures better coherence between IT
+  operations and business strategies.
+keywords:
+  - BizDevOps
+  - Business Capability
