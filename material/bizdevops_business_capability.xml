@@ -1,0 +1,1831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd http://purl.org/dc/elements/1.1/ http://www.opengroup.org/xsd/archimate/3.1/dc.xsd" identifier="id-b814229a4fff4880a620fb8a1afa0535">
+  <name xml:lang="en">BizDevOps Business Capability</name>
+  <documentation xml:lang="en">Context&#xD;
+BizDevOps-BC is a business capability designed to facilitate the transition from DevOps to BizDevOps, enabling organizations to integrate business concerns into the software development lifecycle while maintaining agility.​&#xD;
+This business capability supports organizations that have adopted DevOps but struggle with IT/business alignment, providing a structured framework to identify and develop essential components for this transition&#xD;
+​&#xD;
+&#xD;
+Purpose&#xD;
+The purpose of BizDevOps-BC is to define the fundamental elements required for IT-business alignment in BizDevOps without prescribing specific implementation details​. By doing so, it helps organizations understand and develop the core capabilities necessary to embed business objectives into software development processes, ensuring that technical efforts directly support strategic goals&#xD;
+​&#xD;
+&#xD;
+Objective&#xD;
+BizDevOps-BC aims to provide organizations with a structured means of assessing and developing the necessary capabilities for transitioning to BizDevOps​. This includes defining key elements across four dimensions:&#xD;
+&#xD;
+- People: Roles with responsibilities focused on IT-business alignment (e.g., Product Owner with Alignment Manager duties, Agility Manager)​.&#xD;
+- Processes: Incorporation of continuous IT-business alignment processes alongside standard DevOps practices​.&#xD;
+- Information: Principles, values, and metrics governing processes and decision-making​.&#xD;
+- Resources: Tools and technologies that support BizDevOps practices and facilitate collaboration​.&#xD;
+&#xD;
+&#xD;
+BizDevOps-BC focuses on:&#xD;
+- IT/Business Alignment: Ensuring that software development efforts align with business goals without compromising agility​.&#xD;
+- Decision-Making: Providing a framework for prioritizing development initiatives based on business impact rather than solely technical considerations​.&#xD;
+- Scalability and Flexibility: Enabling organizations to maintain IT-business alignment in dynamic and complex environments by structuring development efforts around business capabilities​.&#xD;
+&#xD;
+&#xD;
+In summary, BizDevOps-BC serves as a foundational capability that helps organizations transition from DevOps to BizDevOps by structuring IT-business alignment around essential business components, ensuring that agility is preserved while fostering business-driven software &lt;development​.</documentation>
+  <metadata>
+    <schema>Dublin Core</schema>
+    <schemaversion>1.1</schemaversion>
+    <dc:title>Enterprise Reference Architecture for BizDevOps</dc:title>
+    <dc:creator>Guillermo Fuentes-Quijada, Francisco Ruiz-González, Angélica Caro Gutiérrez</dc:creator>
+    <dc:language>en</dc:language>
+  </metadata>
+  <elements>
+    <element identifier="id-3eb3511ac1f8430fba666aba30bcb99d" xsi:type="BusinessRole">
+      <name xml:lang="en">Agility Manager</name>
+      <documentation xml:lang="en">This view presents the ABBs that guide the development of a software product with BizDevOps.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:AgilityManager</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/04/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">In BizDevOps, this role ensures the team remains agile across all phases of the approach. They create an environment for efficient and productive work. In Scrum and similar frameworks, this role is often filled by the Scrum Master.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-5eeffa33a10d42e6a108fae50895163a" xsi:type="BusinessRole">
+      <name xml:lang="en">BizDevOps Team</name>
+      <documentation xml:lang="en">Definition: The BizDevOps Team is a cross-functional unit that integrates roles from business, development, and operations to ensure continuous IT alignment with business objectives and agility. It includes positions such as Product Owner and Agility Manager, supported by DevOps roles, fostering collaboration to streamline software delivery and maximize value</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:BizDevOpsTeam</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">08/07/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">The BizDevOps Team is a cross-functional unit that integrates roles from business, development, and operations to ensure continuous IT alignment with business objectives and agility. It includes positions such as Product Owner and Agility Manager, supported by DevOps roles, fostering collaboration to streamline software delivery and maximize value</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-b1434e76d07a4f5fbb869cf84fa88135" xsi:type="BusinessRole">
+      <name xml:lang="en">Alignment Manager</name>
+      <documentation xml:lang="en">Definition: In BizDevOps, this role is pivotal in ensuring that the product aligns with business needs and creates added value. The primary focus of the Alignment Manager shifts towards facilitating IT-business alignment, emphasizing their responsibility to align IT strategies closely with business objectives. This redefined focus expands their traditional role of bridging the gap between business stakeholders and the IT team, ensuring that the product delivers maximum value in line with business priorities.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:AlignmentManager</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/10/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">In BizDevOps, this role is pivotal in ensuring that the product aligns with business needs and creates added value. The primary focus of the Product Owner shifts towards facilitating IT-business alignment, emphasizing their responsibility to align IT strategies closely with business objectives. This redefined focus expands their traditional role of bridging the gap between business stakeholders and the IT team, ensuring that the product delivers maximum value in line with business priorities.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-845548b9e75e489c8dcc1730322155cf" xsi:type="BusinessRole">
+      <name xml:lang="en">DevOps Roles</name>
+      <documentation xml:lang="en">Definition: DevOps roles, including IT Development and Operations; DevOps Architect; Other DevOps roles defined in the organization.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:DevOpsRoles</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">08/09/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">DevOps roles, including IT Development and Operations; DevOps Architect; Other DevOps roles defined in the organization.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-ba24775e8912429b9b818355f1091178" xsi:type="BusinessRole">
+      <name xml:lang="en">Product Owner</name>
+      <documentation xml:lang="en">Definition: A role responsible for defining and communicating product vision to meet business needs.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:ProductOwner</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">01/12/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">A role responsible for defining and communicating product vision to meet business needs.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-e03fdc4e73194406b13b3a8e9e0917e4" xsi:type="BusinessProcess">
+      <name xml:lang="en">Business or Mission Analysis</name>
+      <documentation xml:lang="en">The purpose of the Business or Mission Analysis process is to define the business or mission problem or opportunity, characterize the solution space, and determine potential solution class(es) that could address a problem or take advantage of an opportunity. (ISO/IEC/IEEE 12207:2017, 6.4.1.1)</documentation>
+    </element>
+    <element identifier="id-4da2a0ae351c4fe682b0dcd4e631e122" xsi:type="BusinessProcess">
+      <name xml:lang="en">Operation</name>
+      <documentation xml:lang="en">The purpose of the Operation process is to use the system to deliver its services.&#xD;
+This process establishes requirements for and assigns personnel to operate the system, and monitors the services and operator-system performance. In order to sustain services, it identifies and analyses operational anomalies in relation to agreements, stakeholder requirements and organizational constraints. (ISO/IEC/IEEE 12207:2017, 6.4.12.1)</documentation>
+    </element>
+    <element identifier="id-adcb163dd10047b18647a2f41ac20634" xsi:type="BusinessProcess">
+      <name xml:lang="en">Maintenance</name>
+      <documentation xml:lang="en">The purpose of the Maintenance process is to sustain the capability of the system to provide a service.&#xD;
+This process monitors the system’s capability to deliver services, records incidents for analysis, takes corrective, adaptive, perfective and preventive actions and confirms restored capability. (ISO/IEC/IEEE 12207:2017, 6.4.13.1)</documentation>
+    </element>
+    <element identifier="id-8fa03f7ea728477480d65e52276108ac" xsi:type="BusinessProcess">
+      <name xml:lang="en">Stakeholder Needs and Requirements Definition</name>
+      <documentation xml:lang="en">The purpose of the Stakeholder Needs and Requirements Definition process is to define the stakeholder requirements for a system that can provide the capabilities needed by users and other stakeholders in a defined environment.&#xD;
+It identifies stakeholders, or stakeholder classes, involved with the system throughout its life cycle, and their needs. It analyzes and transforms these needs into a common set of stakeholder requirements that express the intended interaction the system will have with its operational environment and that are the reference against which each resulting operational capability is validated. The stakeholder requirements re defined considering the context of the system-of-interest with the interoperating systems and enabling systems. (ISO/IEC/IEEE 12207:2017, 6.4.2.1)</documentation>
+    </element>
+    <element identifier="id-97db340517cf45369d4701f94bca7006" xsi:type="BusinessProcess">
+      <name xml:lang="en">System/Software Requirements Definitions</name>
+      <documentation xml:lang="en">The purpose of the System/Software Requirements Definition process is to transform the stakeholder, user-oriented view of desired capabilities into a technical view of a solution that meets the operational needs of the user.&#xD;
+This process creates a set of measurable system requirements that specify, from the supplier’s perspective, what characteristics, attributes, and functional and performance requirements the system is to possess, in order to satisfy stakeholder requirements. As far as constraints permit, the requirements should not imply any specific implementation. (ISO/IEC/IEEE 12207:2017, 6.4.3.1)</documentation>
+    </element>
+    <element identifier="id-4b78442f32ff40b591bd9e16905d94b8" xsi:type="BusinessProcess">
+      <name xml:lang="en">Architecture Definition</name>
+      <documentation xml:lang="en">The purpose of the Architecture Definition process is to generate system architecture alternatives, to select one or more alternative(s) that frame stakeholder concerns and meet system requirements, and to express this in a set of consistent views.&#xD;
+Iteration of the Architecture Definition process with the Business or Mission Analysis process, System/Software Requirements Definition process, Design Definition process, and Stakeholder Needs and Requirements Definition process is often employed so that there is a negotiated understanding of the problem to be solved and a satisfactory solution is identified. The results of the Architecture Definition process are widely used across the life cycle processes. Architecture definition may be applied at many levels of abstraction, highlighting the relevant detail that is necessary for the decisions at that level. (ISO/IEC/IEEE 12207:2017, 6.4.4.1)</documentation>
+    </element>
+    <element identifier="id-fcfb5fca6653427c9a6727c220fbc41f" xsi:type="BusinessProcess">
+      <name xml:lang="en">Design Definition</name>
+      <documentation xml:lang="en">The purpose of the Design Definition process is to provide sufficient detailed data and information about the system and its elements to enable the implementation consistent with architectural entities as defined in models and views of the system architecture. (ISO/IEC/IEEE 12207:2017, 6.4.5.1)</documentation>
+    </element>
+    <element identifier="id-5f71ce956b834bc7abe262df197c8455" xsi:type="BusinessProcess">
+      <name xml:lang="en">System Analysis</name>
+      <documentation xml:lang="en">The purpose of the System Analysis process is to provide a rigorous basis of data and information for technical understanding to aid decision-making across the life cycle.&#xD;
+The System Analysis process applies to the development of inputs needed for any technical assessment. It can provide confidence in the utility and integrity of system requirements, architecture, and design. System analysis covers a wide range of differing analytic functions, levels of complexity, and levels of rigor. It includes mathematical analysis, modelling, simulation, experimentation, and other techniques to analyze technical performance, system behavior, feasibility, affordability, critical quality characteristics, technical risks, life cycle costs, and to perform sensitivity analysis of the potential range of values for parameters across all life cycle stages. It is used for a wide range of analytical needs concerning operational concepts, determination of requirement values, resolution of requirements conflicts, assessment of alternative architectures or system elements, and evaluation of engineering strategies (integration, verification, validation, and maintenance). Formality and rigor of the analysis will depend on the criticality of the information need or work product supported, the amount of information/data available, the size of the project, and the schedule for the results. (ISO/IEC/IEEE 12207:2017, 6.4.6.1)</documentation>
+    </element>
+    <element identifier="id-a75012909fd046219a002bc7b79d29e4" xsi:type="BusinessProcess">
+      <name xml:lang="en">Implementation</name>
+      <documentation xml:lang="en">The purpose of the Implementation process is to realize a specified system element.&#xD;
+This process transforms requirements, architecture, and design, including interfaces, into actions that create a system element according to the practices of the selected implementation technology, using appropriate technical specialties or disciplines. This process results in a system element that satisfies specified system requirements (including allocated and derived requirements), architecture, and design. (ISO/IEC/IEEE 12207:2017, 6.4.7.1)</documentation>
+    </element>
+    <element identifier="id-35f1daa7511945939ca9709c2b0fa691" xsi:type="BusinessProcess">
+      <name xml:lang="en">Integration</name>
+      <documentation xml:lang="en">The purpose of the Integration process is to synthesize a set of system elements into a realized system (product or service) that satisfies system/software requirements, architecture, and design.&#xD;
+This process assembles the implemented system elements. Interfaces are identified and activated to enable interoperation of the system elements as intended. This process integrates the enabling systems with the system-of-interest to facilitate interoperation. (ISO/IEC/IEEE 12207:2017, 6.4.8.1)</documentation>
+    </element>
+    <element identifier="id-8f2889a736e24da08fedd3424043d81a" xsi:type="BusinessProcess">
+      <name xml:lang="en">Verification</name>
+      <documentation xml:lang="en">The purpose of the Verification process is to provide objective evidence that a system or system element fulfills its specified requirements and characteristics.&#xD;
+The Verification process identifies the anomalies (errors, defects, or faults) in any information item (e.g., system/software requirements or architecture description), implemented system elements, or life cycle processes using appropriate methods, techniques, standards or rules. This process provides the necessary information to determine resolution of identified anomalies. (ISO/IEC/IEEE 12207:2017, 6.4.9.1)</documentation>
+    </element>
+    <element identifier="id-41066c95fe8243dba0da12c7faae96e3" xsi:type="BusinessProcess">
+      <name xml:lang="en">Transition</name>
+      <documentation xml:lang="en">The purpose of the Transition process is to establish a capability for a system to provide services specified by stakeholder requirements in the operational environment.&#xD;
+This process moves the system in an orderly, planned manner into the operational status, such that the system is functional, operable and compatible with other operational systems. It installs a verified system, together with relevant enabling systems, e.g., planning system, support system, operator training system, user training system, as defined in agreements. This process is used at each level in the system structure&#xD;
+and in each stage to complete the criteria established for exiting the stage. It includes preparing applicable storage, handling, and shipping enabling systems. (ISO/IEC/IEEE 12207:2017, 6.4.10.1)</documentation>
+    </element>
+    <element identifier="id-b741609b50894caa9a1455cd61fe1b8b" xsi:type="BusinessProcess">
+      <name xml:lang="en">Validation</name>
+      <documentation xml:lang="en">The purpose of the Validation process is to provide objective evidence that the system, when in use, fulfils its business or mission objectives and stakeholder requirements, achieving its intended use in its intended operational environment.&#xD;
+The objective of validating a system or system element is to acquire confidence in its ability to achieve its intended mission, or use, under specific operational conditions. Validation is ratified by stakeholders. This process provides the necessary information so that identified anomalies can be resolved by the appropriate technical process where the anomaly was created. (ISO/IEC/IEEE 12207:2017, 6.4.11.1)</documentation>
+    </element>
+    <element identifier="id-f33ffedca68d4480aab84c730764772f" xsi:type="BusinessProcess">
+      <name xml:lang="en">Disposal</name>
+      <documentation xml:lang="en">The purpose of the Disposal process is to end the existence of a system element or system for a specified intended use, appropriately handle replaced or retired elements, and to properly attend to identified critical disposal needs (e.g., per an agreement, per organizational policy, or for environmental, legal, safety, security aspects).&#xD;
+This process deactivates, disassembles and removes the system or any of its elements from the specific use. It addresses any waste products, consigning them to a final condition and returning the environment to its original or an acceptable condition. The waste products can be in-process resulting during any life cycle stage, e.g., waste materials during fabrication. This process destroys, stores, or reclaims system elements and waste products in an environmentally sound manner, in accordance with legislation, agreements, organizational constraints and stakeholder requirements. Disposal includes preventing expired, nonreusable, or inadequate elements from getting back into the supply chain. Where required, it maintains records in order that the health of operators and users, and the safety of the environment, can be monitored. When part of the system will continue to be in use in a modified form, the Disposal process helps ensure the proper handling of the portion being retired. (ISO/IEC/IEEE 12207:2017, 6.4.14.1)</documentation>
+    </element>
+    <element identifier="id-445eeb87940c404da8fe335741c41811" xsi:type="BusinessProcess">
+      <name xml:lang="en">Project Planning</name>
+      <documentation xml:lang="en">The purpose of the Project Planning process is to produce and coordinate effective and workable plans.&#xD;
+This process determines the scope of the project management and technical activities, identifies process outputs, tasks and deliverables, establishes schedules for task conduct, including achievement criteria, and required resources to accomplish tasks. This is an ongoing process that continues throughout a project, with regular revisions to plans. (ISO/IEC/IEEE 12207:2017, 6.3.1.1)</documentation>
+    </element>
+    <element identifier="id-878e1244395b4dd6b22671300dfc25b3" xsi:type="BusinessProcess">
+      <name xml:lang="en">Project Assessment and Control</name>
+      <documentation xml:lang="en">The purpose of the Project Assessment and Control process is to assess if the plans are aligned and feasible; determine the status of the project, technical and process performance; and direct execution to help ensure that the performance is according to plans and schedules, within projected budgets, to satisfy technical objectives.&#xD;
+This process evaluates, periodically and at major events, the progress and achievements against requirements, plans and overall business objectives. Information is provided for management action when significant variances are detected. This process also includes redirecting the project activities and tasks, as appropriate, to correct identified deviations and variations from other technical management or technical processes. Redirection may include re-planning as appropriate. (ISO/IEC/IEEE 12207:2017, 6.3.2.1)</documentation>
+    </element>
+    <element identifier="id-e1c0572ea00140059cf13d7422ad90f0" xsi:type="BusinessProcess">
+      <name xml:lang="en">Decision Management</name>
+      <documentation xml:lang="en">The purpose of the Decision Management process is to provide a structured, analytical framework for objectively identifying, characterizing and evaluating a set of alternatives for a decision at any point in the life cycle and select the most beneficial course of action. (ISO/IEC/IEEE 12207:2017, 6.3.3.1)</documentation>
+    </element>
+    <element identifier="id-0d37a910c5a142a592418d4fc382d4f8" xsi:type="BusinessProcess">
+      <name xml:lang="en">Risk Management</name>
+      <documentation xml:lang="en">The purpose of the Risk Management process is to identify, analyze, treat and monitor the risks continually.&#xD;
+The Risk Management process is a continual process for systematically addressing risk throughout the life cycle of a system product or service. It can be applied to risks related to the acquisition, development, maintenance or operation of a system. (ISO/IEC/IEEE 12207-2017, 6.3.4.1)</documentation>
+    </element>
+    <element identifier="id-bc0826a815aa44b784eb755a5a37f08f" xsi:type="BusinessProcess">
+      <name xml:lang="en">Configuration Management</name>
+      <documentation xml:lang="en">The purpose of Configuration Management is to manage and control system elements and configurations over the life cycle. Configuration Management (CM) also manages consistency between a product and its associated configuration definition. (ISO/IEC/IEEE 12207:2017, 6.3.5.1)</documentation>
+    </element>
+    <element identifier="id-de2edfe1cea64a66aab72ada90793082" xsi:type="BusinessProcess">
+      <name xml:lang="en">Information Management</name>
+      <documentation xml:lang="en">The purpose of the Information Management process is to generate, obtain, confirm, transform, retain, retrieve, disseminate and dispose of information, to designated stakeholders.&#xD;
+Information management plans, executes, and controls the provision of information to designated stakeholders that is unambiguous, complete, verifiable, consistent, modifiable, traceable, and presentable. Information includes technical, project, organizational, agreement, and user information. Information is often derived from data records of the organization, system, process, or project. (ISO/IEC/IEEE 12207:2017, 6.3.6.1)</documentation>
+    </element>
+    <element identifier="id-7144ff305259424690e27fc06e5e0d6e" xsi:type="BusinessProcess">
+      <name xml:lang="en">Measurement</name>
+    </element>
+    <element identifier="id-411a082ca7f94c00be7bbe85ca30f980" xsi:type="BusinessProcess">
+      <name xml:lang="en">Quality Assurance</name>
+      <documentation xml:lang="en">The purpose of the Quality Assurance process is to help ensure the effective application of the organization’s Quality Management process to the project.&#xD;
+Quality Assurance focuses on providing confidence that quality requirements will be fulfilled. Proactive analysis of the project life cycle processes and outputs is performed to assure that the product being produced will be of the desired quality and that organization and project policies and procedures are followed. (ISO/IEC/IEEE 12207:2017, 6.3.8.1)</documentation>
+    </element>
+    <element identifier="id-db7756a51fbc474daa1fa32c410291a3" xsi:type="BusinessProcess">
+      <name xml:lang="en">Portfolio Management</name>
+      <documentation xml:lang="en">The purpose of the Portfolio Management process is to initiate and sustain necessary, sufficient and suitable projects in order to meet the strategic objectives of the organization.&#xD;
+This process commits the investment of adequate organization funding and resources, and sanctions the authorities needed to establish selected projects. It performs continued assessment of projects to confirm they justify, or can be redirected to justify, continued investment. (ISO/IEC/IEEE 12207:2017, 6.2.3.1)</documentation>
+    </element>
+    <element identifier="id-d089ff3c4e79467a9b96800161b100df" xsi:type="BusinessProcess">
+      <name xml:lang="en">Knowledge Management</name>
+      <documentation xml:lang="en">The purpose of the Knowledge Management process is to create the capability and assets that enable the organization to exploit opportunities to re‐apply existing knowledge.&#xD;
+This encompasses knowledge, skills, and knowledge assets, including system elements (ISO/IEC/IEEE 12207:2017, 6.2.6.1).</documentation>
+    </element>
+    <element identifier="id-af89f14cdcbe45f3ab7289c70e9a9749" xsi:type="BusinessProcess">
+      <name xml:lang="en">Quality Management</name>
+      <documentation xml:lang="en">The purpose of the Quality Management process is to assure that products, services and implementations of the quality management process meet organizational and project quality objectives and achieve customer satisfaction. (ISO/IEC/IEEE 12207:2017, 6.2.5.1)</documentation>
+    </element>
+    <element identifier="id-68f35d925f854b448e1ca72660e37347" xsi:type="BusinessProcess">
+      <name xml:lang="en">Life Cycle Model Management</name>
+      <documentation xml:lang="en">The purpose of the Life Cycle Model Management process is to define, maintain, and assure availability of policies, life cycle processes, life cycle models, and procedures for use by the organization with respect to the scope of this document.&#xD;
+This process provides life cycle policies, processes, models, and procedures that are consistent with the organization’s objectives, that are defined, adapted, improved and maintained to support individual project needs within the context of the organization, and that are capable of being applied using effective, proven methods and tools. (ISO/IEC/IEEE 12207:2017, 6.2.1.1)</documentation>
+    </element>
+    <element identifier="id-4faa450870e243159a025def9799f780" xsi:type="BusinessProcess">
+      <name xml:lang="en">Human Resource Management</name>
+      <documentation xml:lang="en">The purpose of the Human Resource Management process is to provide the organization with necessary human resources and to maintain their competencies, consistent with business needs.&#xD;
+This process provides a supply of skilled and experienced personnel qualified to perform life cycle processes to achieve organization, project, and stakeholder objectives. (ISO/IEC/IEEE 12207:2017, 6.2.4.1)</documentation>
+    </element>
+    <element identifier="id-443807eff8e74e03a65b9db2cb6a5682" xsi:type="BusinessProcess">
+      <name xml:lang="en">Infrastructure Management</name>
+      <documentation xml:lang="en">The purpose of the Infrastructure Management process is to provide the enabling infrastructure and services to projects to support organization and project objectives throughout the life cycle.&#xD;
+This process defines, provides and maintains the facilities, tools, and communications and information technology assets needed for the organization’s business with respect to the scope of this document. (ISO/IEC/IEEE 12207:2017, 6.2.2.1)</documentation>
+    </element>
+    <element identifier="id-c0c754bc3f0c444e8b1e5ef0b232703a" xsi:type="BusinessProcess">
+      <name xml:lang="en">Acquisition</name>
+      <documentation xml:lang="en">The purpose of the Supply process is to provide an acquirer with a product or service that meets agreed requirements. (ISO/IEC/IEEE 12207:2017, 6.1.2.1)</documentation>
+    </element>
+    <element identifier="id-411c188042314e82b27a17c875980028" xsi:type="BusinessProcess">
+      <name xml:lang="en">Supply</name>
+      <documentation xml:lang="en">The purpose of the Supply process is to provide an acquirer with a product or service that meets agreed requirements. (ISO/IEC/IEEE 12207:2017, 6.1.2.2)</documentation>
+    </element>
+    <element identifier="id-3b205d293e4b4d3094d3775c4f150770" xsi:type="BusinessProcess">
+      <name xml:lang="en">Planification</name>
+      <documentation xml:lang="en">Definition: The Planification Process in BizDevOps is a crucial stage where realistic timelines, resources, and project milestones are set. This phase involves creating a detailed roadmap that outlines the necessary steps to deliver the product, ensuring that all team members are aligned and prepared for execution. During planning, the BizDevOps team estimates and plans the product increments to be developed in the upcoming period. Continuous planning practice is common in many organizations, and incremental planning events (PI) serve as essential alignment loops to create a unified vision of product features, planning, team dependencies, and other necessary components to add value to the end user. In this process, product backlog management is conducted continuously and incrementally, with constant updates at various levels of granularity, from high-level solutions to team-level user stories. The Product Owner is responsible for defining and prioritizing what will be built in the upcoming product increments.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:PlanificationProcess</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">11/07/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">The Planification Process in BizDevOps is a crucial stage where realistic timelines, resources, and project milestones are set. This phase involves creating a detailed roadmap that outlines the necessary steps to deliver the product, ensuring that all team members are aligned and prepared for execution. During planning, the BizDevOps team estimates and plans the product increments to be developed in the upcoming period. Continuous planning practice is common in many organizations, and incremental planning events (PI) serve as essential alignment loops to create a unified vision of product features, planning, team dependencies, and other necessary components to add value to the end user. In this process, product backlog management is conducted continuously and incrementally, with constant updates at various levels of granularity, from high-level solutions to team-level user stories. The Product Owner is responsible for defining and prioritizing what will be built in the upcoming product increments.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-0070e513b0e74057abd0a8d0602547d1" xsi:type="BusinessProcess">
+      <name xml:lang="en">Definition</name>
+      <documentation xml:lang="en">Definition: The Definition Process in BizDevOps is a critical phase that focuses on the detailed specification of the product, encompassing both functional and non-functional requirements. This stage is essential to ensure that the development team has a clear and precise understanding of what needs to be built. During this phase, specific product goals are established and the necessary features and functionalities to meet these goals are precisely defined. The collaboration between business stakeholders and development teams is intense, allowing business requirements to be translated into detailed technical specifications. This process ensures that all members of the development team are aligned with the product's vision and objectives, minimizing the possibility of misunderstandings and errors during subsequent development and operation phases. Clarity and specificity in this phase are crucial for the efficiency and effectiveness of software development, ensuring that the final product meets business and end-user expectations.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:DefinitionProcess</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">11/07/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">The Definition Process in BizDevOps is a critical phase that focuses on the detailed specification of the product, encompassing both functional and non-functional requirements. This stage is essential to ensure that the development team has a clear and precise understanding of what needs to be built. During this phase, specific product goals are established and the necessary features and functionalities to meet these goals are precisely defined. The collaboration between business stakeholders and development teams is intense, allowing business requirements to be translated into detailed technical specifications. This process ensures that all members of the development team are aligned with the product's vision and objectives, minimizing the possibility of misunderstandings and errors during subsequent development and operation phases. Clarity and specificity in this phase are crucial for the efficiency and effectiveness of software development, ensuring that the final product meets business and end-user expectations.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-ece86997eccc46e3b90ac177387995fa" xsi:type="BusinessProcess">
+      <name xml:lang="en">Discovery</name>
+      <documentation xml:lang="en">Definition: The Discovery Process in BizDevOps is a fundamental phase that focuses on identifying and understanding customer needs and problems, as well as exploring new market opportunities. This initial process is crucial for establishing alignment between business objectives and technical capabilities, ensuring that subsequent software development efforts are geared towards delivering maximum value to the end user. During this phase, the BizDevOps team gathers information from multiple sources, including insights from business experts, analysts, and key users, to form a detailed understanding of the underlying problem and market needs. Defining high-level business goals and creating a clear product vision are critical activities in this phase, allowing for the establishment of hypotheses that will guide further experimentation and validation with user feedback. This iterative and user-centered approach ensures that development efforts are continuously aligned with business and market expectations, minimizing risks and costs associated with unexpected changes and failures in later stages​.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:DiscoveryProcess</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">11/07/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">The Discovery Process in BizDevOps is a fundamental phase that focuses on identifying and understanding customer needs and problems, as well as exploring new market opportunities. This initial process is crucial for establishing alignment between business objectives and technical capabilities, ensuring that subsequent software development efforts are geared towards delivering maximum value to the end user. During this phase, the BizDevOps team gathers information from multiple sources, including insights from business experts, analysts, and key users, to form a detailed understanding of the underlying problem and market needs. Defining high-level business goals and creating a clear product vision are critical activities in this phase, allowing for the establishment of hypotheses that will guide further experimentation and validation with user feedback. This iterative and user-centered approach ensures that development efforts are continuously aligned with business and market expectations, minimizing risks and costs associated with unexpected changes and failures in later stages​</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-0c7c2f1da1314458b2062675b392048e" xsi:type="BusinessProcess">
+      <name xml:lang="en">Alignment</name>
+      <documentation xml:lang="en">Definition: The Alignment Process in BizDevOps is fundamental to ensuring that software development activities are continuously synchronized with business objectives. This process addresses the challenge of integrating business and IT domains, ensuring that the strategies, goals, and practices of both are aligned to maximize the value delivered to end users and maintain business agility.&#xD;
+&#xD;
+Alignment in BizDevOps focuses on two essential components: people and processes. Regarding people, it involves ensuring that all actors involved, both from business and IT, work towards the same goals. This is achieved by forming cross-functional and autonomous BizDevOps teams, where each member possesses skills both in their specialty and in other areas of the team, promoting closer collaboration and a better understanding between different roles. Process alignment involves integrating agile and DevOps practices with business strategies, facilitating continuous and effective communication between business stakeholders and development teams.&#xD;
+&#xD;
+A crucial aspect of the alignment process is the implementation of short and frequent feedback cycles, which allow the BizDevOps team to receive valuable insights from end users and make necessary adjustments to continuously improve the product. This iterative and data-driven approach ensures that software development not only meets technical requirements but also aligns with market expectations and needs. Additionally, the use of specific metrics and KPIs helps evaluate the performance of the team and the product, ensuring that decisions are made based on accurate and up-to-date information.&#xD;
+&#xD;
+Finally, continuous alignment in BizDevOps not only focuses on delivering high-quality software but also on creating a collaborative and adaptable environment that can quickly respond to changes in business and market demands, always maintaining a user-centered vision.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:AlignmentProcess</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">11/07/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">The Alignment Process in BizDevOps is fundamental to ensuring that software development activities are continuously synchronized with business objectives. This process addresses the challenge of integrating business and IT domains, ensuring that the strategies, goals, and practices of both are aligned to maximize the value delivered to end users and maintain business agility.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-1b27e0b973c24b95bc09bdf8a3b262ac" xsi:type="TechnologyService">
+      <name xml:lang="en">BizDevOps Bus Service</name>
+      <documentation xml:lang="en">Definition: The BizDevOps Bus Service is a Technology Service, serving as a foundational component for organizations adopting the BizDevOps approach. This service provides an integrated set of tools and practices to support collaboration between business, development, and operations, ensuring alignment and continuous delivery of value.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:BizDevOpsBusTechService</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">The BizDevOps Bus Service is a Technology Service, serving as a foundational component for organizations adopting the BizDevOps approach. This service provides an integrated set of tools and practices to support collaboration between business, development, and operations, ensuring alignment and continuous delivery of value.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-c66f20b07418402b8aa9cf09a85f433f" xsi:type="TechnologyService">
+      <name xml:lang="en">IT Governance and IT/Business Alignment Service</name>
+      <documentation xml:lang="en">Description: Ensures alignment between business strategic objectives and technological capabilities through governance and enterprise architecture practices.&#xD;
+&#xD;
+Example:&#xD;
+ - Use of ArchiMate notation to model and visualize IT/Business alignment using tools like Archi.&#xD;
+- Definition of architectural policies and principles to guide the implementation of solutions, ensuring consistency with organizational goals.&#xD;
+&#xD;
+Value Added:&#xD;
+- Facilitates strategic planning and traceability of technological initiatives based on business outcomes.&#xD;
+- Enhances stakeholder communication through standardized models.</documentation>
+    </element>
+    <element identifier="id-f72fa3ba4b5b4fa8aec9d7a11f535e15" xsi:type="TechnologyService">
+      <name xml:lang="en">Documentation and Knowledge Management Service</name>
+      <documentation xml:lang="en">Description: Facilitates the creation, storage, and distribution of organizational documentation and knowledge.&#xD;
+&#xD;
+Example:&#xD;
+- Implementation of a platform like Confluence to centralize technical documentation, procedures, and organizational learnings.&#xD;
+- Integration with other tools for efficient search and retrieval of critical information.&#xD;
+&#xD;
+Value Added:&#xD;
+- Promotes knowledge reuse and reduces duplicated efforts.&#xD;
+- Enhances business continuity by providing easy access to key information.</documentation>
+    </element>
+    <element identifier="id-af39b3f900eb42988747ebbde62e11f0" xsi:type="TechnologyService">
+      <name xml:lang="en">Repository and Control Version Service</name>
+      <documentation xml:lang="en">Description: Provides centralized management of source code and version control to support collaborative work.&#xD;
+&#xD;
+Example:&#xD;
+- Use of tools like GitHub, GitLab, or Bitbucket to manage repositories, perform code reviews, and enable automated integrations.&#xD;
+&#xD;
+Value Added:&#xD;
+- Ensures traceability of changes and improves code quality through collaborative reviews.&#xD;
+- Facilitates continuous integration and teamwork in distributed environments.</documentation>
+    </element>
+    <element identifier="id-46ac65b15dc246ed876b13611775b715" xsi:type="TechnologyService">
+      <name xml:lang="en">Monitoring and Logging Service</name>
+      <documentation xml:lang="en">Description: Provides capabilities to monitor and analyze the performance of systems, applications, and services.&#xD;
+&#xD;
+Example:&#xD;
+- Use of tools like Prometheus for metrics and alerts, and Grafana for data visualization.&#xD;
+- Implementation of solutions like ELK Stack (Elasticsearch, Logstash, Kibana) for log analysis.&#xD;
+&#xD;
+Value Added:&#xD;
+- Enables proactive problem identification and continuous optimization.&#xD;
+- Enhances end-user experience by ensuring service stability.</documentation>
+    </element>
+    <element identifier="id-b95eba89ef964dd195c5d0835f5dedad" xsi:type="TechnologyService">
+      <name xml:lang="en">Agile Projects Management Service</name>
+      <documentation xml:lang="en">Description: Provides support for agile project management, promoting collaboration and adaptability through agile tools.&#xD;
+&#xD;
+Example:&#xD;
+- Use of Jira for task management, backlog prioritization, and real-time project tracking.&#xD;
+- Configuration of Kanban or Scrum boards to ensure transparency and progress monitoring.&#xD;
+&#xD;
+Value Added:&#xD;
+- Improves project visibility and enables data-driven decision-making.&#xD;
+- Allows rapid adaptation to changing business requirements.</documentation>
+    </element>
+    <element identifier="id-d8a83a5b66254230ac7c5d5e6439796b" xsi:type="TechnologyService">
+      <name xml:lang="en">IDE Service</name>
+      <documentation xml:lang="en">Description: Offers integrated development environments that optimize developer productivity.&#xD;
+&#xD;
+Example:&#xD;
+- Use of IDEs like IntelliJ IDEA, Visual Studio Code, or Eclipse, configured with plugins for repository integration, testing tools, and CI/CD pipelines.&#xD;
+&#xD;
+Value Added:&#xD;
+- Boosts development efficiency by integrating multiple tools into a single environment.&#xD;
+- Facilitates collaboration among developers through standardized setups.</documentation>
+    </element>
+    <element identifier="id-380f0be0391f4f439215cfd755033acb" xsi:type="TechnologyService">
+      <name xml:lang="en">Continuous Integration and Delivery Service</name>
+      <documentation xml:lang="en">Description: Supports automated pipelines for building, testing, and deploying software continuously.&#xD;
+&#xD;
+Example:&#xD;
+- Use of tools like Jenkins, GitLab CI/CD, or CircleCI to configure integration and deployment workflows.&#xD;
+- Implementation of automated tests and progressive deployments to development, staging, and production environments.&#xD;
+&#xD;
+Value Added:&#xD;
+- Accelerates software delivery without compromising quality.&#xD;
+- Facilitates rapid feedback and continuous iteration.</documentation>
+    </element>
+    <element identifier="id-65177faab52248b383a9fed2d36732f0" xsi:type="TechnologyService">
+      <name xml:lang="en">Infrastructure Automation Service</name>
+      <documentation xml:lang="en">Description: Automates the provisioning, configuration, and management of infrastructure using Infrastructure as Code (IaC) practices.&#xD;
+&#xD;
+Example:&#xD;
+- Use of tools like Terraform, Ansible, or AWS CloudFormation to deploy and manage dynamic and scalable infrastructures.&#xD;
+&#xD;
+Value Added:&#xD;
+- Reduces human errors and deployment times.&#xD;
+- Provides consistent and reproducible environments.</documentation>
+    </element>
+    <element identifier="id-69366da7c616408385533c4cd90cd0bf" xsi:type="TechnologyService">
+      <name xml:lang="en">Testing Service</name>
+      <documentation xml:lang="en">Description: Automates functional, performance, and integration testing to ensure software quality.&#xD;
+&#xD;
+Example:&#xD;
+- Use of frameworks like Selenium for functional tests and JMeter for load testing.&#xD;
+- Integration with CI/CD pipelines to automatically execute tests on each commit.&#xD;
+&#xD;
+Value Added:&#xD;
+- Detects defects early, reducing associated resolution costs.&#xD;
+- Enhances confidence in the quality of deliveries.</documentation>
+    </element>
+    <element identifier="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Principle">
+      <name xml:lang="en">BizDevOps Principle</name>
+      <documentation xml:lang="en">Definition: BizDevOps principles are fundamental guidelines that integrate business, development, and operations practices to enhance collaboration, accelerate delivery, and align IT efforts with business objectives.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:BizDevOpsPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">BizDevOps principles are fundamental guidelines that integrate business, development, and operations practices to enhance collaboration, accelerate delivery, and align IT efforts with business objectives.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-ca348c0a7eb948768562f80ea840494d" xsi:type="Principle">
+      <name xml:lang="en">Alignment</name>
+      <documentation xml:lang="en">Definition: Ensures continuous alignment of IT initiatives with business objectives.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:AlignmentPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Ensures continuous alignment of IT initiatives with business objectives.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-b9d76b7a6f0d4d13b2c507a673d20644" xsi:type="Principle">
+      <name xml:lang="en">Agility</name>
+      <documentation xml:lang="en">Definition: Incorporates agility throughout all operational cycles.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:AgilityPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Incorporates agility throughout all operational cycles.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-5df1c6bf04c54c91a03602783b55bf61" xsi:type="Principle">
+      <name xml:lang="en">Integrated Team</name>
+      <documentation xml:lang="en">Definition: Rather than having separate teams, BizDevOps involves a unified team with roles spanning business, development, and operations to collaboratively meet software needs.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:IntegratedTeamPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Rather than having separate teams, BizDevOps involves a unified team with roles spanning business, development, and operations to collaboratively meet software needs.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-361e6c29ffab455d8bbd67bcdd1d1e94" xsi:type="Principle">
+      <name xml:lang="en">Business First</name>
+      <documentation xml:lang="en">Definition: Prioritizes organizational objectives over technical details.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:BusinessFirstPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Prioritizes organizational objectives over technical details.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-34fc77b18ea64672a388134054aef425" xsi:type="Principle">
+      <name xml:lang="en">Customer Focus</name>
+      <documentation xml:lang="en">Definition: Adopts a customer-centered approach, prioritizing tasks to deliver maximum value and effectively managing risks.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:CustomerFocusPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Adopts a customer-centered approach, prioritizing tasks to deliver maximum value and effectively managing risks.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-3ca68c30ccc341cc99e8d16940b738c5" xsi:type="Principle">
+      <name xml:lang="en">Shift-Left</name>
+      <documentation xml:lang="en">Definition: Anticipates tasks typically performed at the later stages of development, such as quality and security testing, to address them earlier in the lifecycle.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:ShiftLeftPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Anticipates tasks typically performed at the later stages of development, such as quality and security testing, to address them earlier in the lifecycle.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-1abed5bd3e67417f8f0de6c2e93e6069" xsi:type="Principle">
+      <name xml:lang="en">Continuity in Everything</name>
+      <documentation xml:lang="en">Definition: Utilizes automated practices across business, development, and operations to maintain continuous process flow.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:ContinuityInEverythingPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Utilizes automated practices across business, development, and operations to maintain continuous process flow.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-c66ccf114f244c91bf3a6df946a8b670" xsi:type="Principle">
+      <name xml:lang="en">Systems Thinking</name>
+      <documentation xml:lang="en">Definition: Promotes a comprehensive understanding of the system from start to finish, aiding in the resolution of complex issues that may arise.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:SystemsThinkingPrinciple</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Promotes a comprehensive understanding of the system from start to finish, aiding in the resolution of complex issues that may arise.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-f387ac9d0371471c89eaa7fb27a63687" xsi:type="Value">
+      <name xml:lang="en">CAMS Values</name>
+      <documentation xml:lang="en">In BizDevOps, the CAMS values (Culture, Automation, Measurement, Sharing) extend beyond DevOps by integrating business alignment. Culture fosters collaboration across business, development, and operations. Automation goes beyond CI/CD to include business process automation. Measurement incorporates business KPIs alongside traditional DevOps metrics. Sharing ensures transparency and cross-functional decision-making, aligning software delivery with strategic business goals.</documentation>
+    </element>
+    <element identifier="id-fccc873de997443abead48e6ab45bbf9" xsi:type="Value">
+      <name xml:lang="en">Culture</name>
+      <documentation xml:lang="en">Encourages a culture of shared responsibility and common goals, fostering communication, collaboration, trust, transparency, and a unified pursuit of objectives.</documentation>
+    </element>
+    <element identifier="id-a12f0f2e97c54273b114667accac2904" xsi:type="Value">
+      <name xml:lang="en">Automation</name>
+      <documentation xml:lang="en">Emphasizes the automation of all processes to minimize delays, enabling rapid delivery and prompt responses from end users.</documentation>
+    </element>
+    <element identifier="id-3f607ed7c9be450da38ec1cd1347f40b" xsi:type="Value">
+      <name xml:lang="en">Measurement</name>
+      <documentation xml:lang="en">Focuses on continuous improvement and visibility across all systems and practices by measuring as much as is useful and feasible, which supports informed decision-making.</documentation>
+    </element>
+    <element identifier="id-4bf5850777ec4befbee73ec503427d97" xsi:type="Value">
+      <name xml:lang="en">Sharing</name>
+      <documentation xml:lang="en">Establishes robust communication channels for ongoing dialogue among team members, facilitating the sharing of concerns and knowledge related to software projects.</documentation>
+    </element>
+    <element identifier="id-36bd248edc284149acd9a0d4b0810ce2" xsi:type="Driver">
+      <name xml:lang="en">IT/Business Alignment</name>
+      <documentation xml:lang="en">Definition: An IT/Business Alignment Driver is a motivating factor that ensures IT strategies and services are integrated with and support business goals. This alignment enhances efficiency, drives competitive advantage, and creates value for the organization by ensuring that IT capabilities directly contribute to business success.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:ITBizAlignmentDriver</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">An IT/Business Alignment Driver is a motivating factor that ensures IT strategies and services are integrated with and support business goals. This alignment enhances efficiency, drives competitive advantage, and creates value for the organization by ensuring that IT capabilities directly contribute to business success.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-a1912ec676bd44c4b84c1105c81a4eb6" xsi:type="Driver">
+      <name xml:lang="en">Agile Software Development</name>
+      <documentation xml:lang="en">Definition: An Agile Software Development Driver is a motivating factor that promotes the adoption of agile methodologies to enhance flexibility, speed, and collaboration in software development. It aims to deliver high-quality software incrementally, respond quickly to changes, and meet customer needs effectively through iterative development and continuous feedback.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDOAgileSwDevelopmentDriver</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">An Agile Software Development Driver is a motivating factor that promotes the adoption of agile methodologies to enhance flexibility, speed, and collaboration in software development. It aims to deliver high-quality software incrementally, respond quickly to changes, and meet customer needs effectively through iterative development and continuous feedback.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-f1ec19d169dc437b8f0ee5fa75f4d97d" xsi:type="Assessment">
+      <name xml:lang="en">Agility is Maintained in the SW project</name>
+      <documentation xml:lang="en">Definition: Agility is Maintained in the SW project is an assessment indicating that the organization continues to operate with flexibility and responsiveness. It ensures that processes, teams, and technologies can quickly adapt to changes, meet evolving customer needs, and support continuous improvement and innovation.&#xD;
+&#xD;
+Metrics Examples:&#xD;
+1. Team Velocity: Measures the amount of work a team can complete during a sprint, usually expressed in story points. This metric helps teams forecast the amount of work they can take on in future sprints.&#xD;
+2. Burndown Chart: A chart that shows the amount of work remaining in the sprint versus time. It's useful for seeing if a team is on track to complete the sprint work on time.&#xD;
+3. Burnup Chart: Similar to the burndown chart, but it shows progress towards a larger goal, like a product release. This chart shows both the completed work and the total planned work, allowing for a clear view of how much remains to reach the final goal.&#xD;
+4. Cycle Time: Measures the time it takes to complete a task from when it starts until it finishes. This metric can help identify bottlenecks in the process.&#xD;
+5. Completion Rate: Calculates the percentage of tasks that are completed compared to the total tasks started. It's useful for evaluating the team's efficiency and delivery capability.&#xD;
+6. Lead Time: Measures the time it takes for the team to start working on a new task or request. A quick response can be indicative of good workflow and agility in the team.&#xD;
+7. Commitment vs. Achievement: This metric compares what the team committed to deliver at the start of a sprint with what they actually delivered at the end. It can help understand planning accuracy and the team's ability to deliver.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:AgilityMaintainedAssessment</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">Agility is Maintained in the SW project is an assessment indicating that the organization continues to operate with flexibility and responsiveness. It ensures that processes, teams, and technologies can quickly adapt to changes, meet evolving customer needs, and support continuous improvement and innovation.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-ca3b1dd3b004429a952f193a105f53c9" xsi:type="Assessment">
+      <name xml:lang="en">SW project is aligned with business</name>
+      <documentation xml:lang="en">Definition: SW project is aligned with business is an assessment indicating that IT initiatives, resources, and strategies effectively support and enhance business goals. This alignment ensures cohesive operations, maximizes efficiency, and drives organizational success by ensuring that IT contributions are directly aligned with business needs and objectives.&#xD;
+&#xD;
+Metrics Examples: (source: https://ieeexplore.ieee.org/document/9263839)&#xD;
+&#xD;
+1. Number of applications by business process.&#xD;
+2. Number of business process by objetive</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">BDO:ITBusinessAlignmentAssessment</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">10/06/2024</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="en">SW project is aligned with business is an assessment indicating that IT initiatives, resources, and strategies effectively support and enhance business goals. This alignment ensures cohesive operations, maximizes efficiency, and drives organizational success by ensuring that IT contributions are directly aligned with business needs and objectives.</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-62eac66805c1466b97292f2b353a88ab" xsi:type="Grouping">
+      <name xml:lang="en">Biz Cycle</name>
+      <documentation xml:lang="en">This view presents the ABBs that guide the development of a software product with BizDevOps.</documentation>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-1894269b18cf4ef4b9723f54e736f338" source="id-ba24775e8912429b9b818355f1091178" target="id-b1434e76d07a4f5fbb869cf84fa88135" xsi:type="Aggregation">
+      <name xml:lang="en">assumes the responsibility of</name>
+      <documentation xml:lang="en">[Product Owner] assumes the responsibility of [Alignment Manager]</documentation>
+    </relationship>
+    <relationship identifier="id-73969b3fab0644e3bab98cdf59ab7b92" source="id-5eeffa33a10d42e6a108fae50895163a" target="id-3eb3511ac1f8430fba666aba30bcb99d" xsi:type="Composition">
+      <name xml:lang="en">composed of</name>
+      <documentation xml:lang="en">[BizDevOps Team] compose of [Agility Manager]</documentation>
+    </relationship>
+    <relationship identifier="id-b8eb2f14ba8d448f9cc6481ca661d308" source="id-5eeffa33a10d42e6a108fae50895163a" target="id-845548b9e75e489c8dcc1730322155cf" xsi:type="Composition">
+      <name xml:lang="en">composed of</name>
+      <documentation xml:lang="en">[BizDevOps Team] compose of [DevOps Roles]</documentation>
+    </relationship>
+    <relationship identifier="id-a182cc7439314ff4a1d6237dfe91cef9" source="id-5eeffa33a10d42e6a108fae50895163a" target="id-ba24775e8912429b9b818355f1091178" xsi:type="Composition">
+      <name xml:lang="en">composed of</name>
+      <documentation xml:lang="en">[BizDevOps Team] compose of [Product Owner]</documentation>
+    </relationship>
+    <relationship identifier="id-8c7e5102fdc74bb4aafacd44157c4b91" source="id-0070e513b0e74057abd0a8d0602547d1" target="id-3b205d293e4b4d3094d3775c4f150770" xsi:type="Flow">
+      <documentation xml:lang="en">This view presents the ABBs that guide the development of a software product with BizDevOps.</documentation>
+    </relationship>
+    <relationship identifier="id-010f5792aa15471c845bae24230ea01e" source="id-62eac66805c1466b97292f2b353a88ab" target="id-0070e513b0e74057abd0a8d0602547d1" xsi:type="Composition" />
+    <relationship identifier="id-52773d67dd614a8a9ac20131ac19673e" source="id-62eac66805c1466b97292f2b353a88ab" target="id-3b205d293e4b4d3094d3775c4f150770" xsi:type="Composition" />
+    <relationship identifier="id-753e7f8fbef5472a911399cdb000c35d" source="id-62eac66805c1466b97292f2b353a88ab" target="id-ece86997eccc46e3b90ac177387995fa" xsi:type="Composition" />
+    <relationship identifier="id-418a8a3b0ad34a15ae3ae5bf2ff5e39e" source="id-0c7c2f1da1314458b2062675b392048e" target="id-ece86997eccc46e3b90ac177387995fa" xsi:type="Flow">
+      <documentation xml:lang="en">This view presents the ABBs that guide the development of a software product with BizDevOps.</documentation>
+    </relationship>
+    <relationship identifier="id-46d35422700b49daad64a959c3406eb9" source="id-62eac66805c1466b97292f2b353a88ab" target="id-0c7c2f1da1314458b2062675b392048e" xsi:type="Composition" />
+    <relationship identifier="id-686661ec80924b348d233482546edff5" source="id-ece86997eccc46e3b90ac177387995fa" target="id-0070e513b0e74057abd0a8d0602547d1" xsi:type="Flow">
+      <documentation xml:lang="en">This view presents the ABBs that guide the development of a software product with BizDevOps.</documentation>
+    </relationship>
+    <relationship identifier="id-3be214efa48641fe9ae05fe98d82b01f" source="id-1abed5bd3e67417f8f0de6c2e93e6069" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Continuity in Everything] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-d0c2f71f33ec415ab0fe4819bed9e826" source="id-361e6c29ffab455d8bbd67bcdd1d1e94" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Business First] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-465064ac76734cd1bdafdbb497e0150e" source="id-c66ccf114f244c91bf3a6df946a8b670" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Systems Thinking] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-87461caf5ec44658a13de168d1ba5ab8" source="id-b9d76b7a6f0d4d13b2c507a673d20644" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Agility] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-c584e9ada338415493b948a2243ce753" source="id-5df1c6bf04c54c91a03602783b55bf61" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Integrated Team] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-a2d1592080aa40f3b5bd7a47c6d54ed5" source="id-3ca68c30ccc341cc99e8d16940b738c5" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Shift-Left] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-f25d1e82826546c79a8411d846110f53" source="id-34fc77b18ea64672a388134054aef425" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Customer Focus] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-a20f5b0cbb224ceca3e231e7e689428f" source="id-ca348c0a7eb948768562f80ea840494d" target="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+      <documentation xml:lang="en">[Alignment] gives realization to [BizDevOps Principles]</documentation>
+    </relationship>
+    <relationship identifier="id-a4c1b2b221d04216aeaceaf1e5ee5f85" source="id-fccc873de997443abead48e6ab45bbf9" target="id-f387ac9d0371471c89eaa7fb27a63687" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+    </relationship>
+    <relationship identifier="id-d199d8da04d94f0280ba32d6b34ce453" source="id-a12f0f2e97c54273b114667accac2904" target="id-f387ac9d0371471c89eaa7fb27a63687" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+    </relationship>
+    <relationship identifier="id-58a5510fa99440e6a398bbe05a1cbdff" source="id-3f607ed7c9be450da38ec1cd1347f40b" target="id-f387ac9d0371471c89eaa7fb27a63687" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+    </relationship>
+    <relationship identifier="id-82c69a64e4904d38b97880a0b9cefbe1" source="id-4bf5850777ec4befbee73ec503427d97" target="id-f387ac9d0371471c89eaa7fb27a63687" xsi:type="Specialization">
+      <name xml:lang="en">specialization</name>
+    </relationship>
+    <relationship identifier="id-701db55f4018428c9490f7a0de36cae0" source="id-a1912ec676bd44c4b84c1105c81a4eb6" target="id-f1ec19d169dc437b8f0ee5fa75f4d97d" xsi:type="Association">
+      <name xml:lang="en">evaluates</name>
+      <documentation xml:lang="en">[Agility is Maintained] evaluates [Agile Software Development]</documentation>
+    </relationship>
+    <relationship identifier="id-6b287bcf649240c3b4aaed0648ee81ac" source="id-36bd248edc284149acd9a0d4b0810ce2" target="id-ca3b1dd3b004429a952f193a105f53c9" xsi:type="Association">
+      <name xml:lang="en">evaluates</name>
+      <documentation xml:lang="en">[IT and business are aligned] evaluates [IT/Business Alignment]</documentation>
+    </relationship>
+    <relationship identifier="id-0bc66aa70c8b4ff0adf4e9afed3a1e41" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-380f0be0391f4f439215cfd755033acb" xsi:type="Composition" />
+    <relationship identifier="id-8ded03eb2f064657899ad37511de4a97" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-69366da7c616408385533c4cd90cd0bf" xsi:type="Composition" />
+    <relationship identifier="id-fea894b6e5ef4cd399b2fee8c9bef3fb" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-f72fa3ba4b5b4fa8aec9d7a11f535e15" xsi:type="Composition" />
+    <relationship identifier="id-8d0d19c54bb64cc799b6051d118a1c6b" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-46ac65b15dc246ed876b13611775b715" xsi:type="Composition" />
+    <relationship identifier="id-9c471fd4909842a586f18289eba16e28" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-af39b3f900eb42988747ebbde62e11f0" xsi:type="Composition" />
+    <relationship identifier="id-a09f0ac9a8764e4ab21d34c905567cf3" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-65177faab52248b383a9fed2d36732f0" xsi:type="Composition" />
+    <relationship identifier="id-9cd2f66709244e5d8d7fd3a3992cfa5e" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-c66f20b07418402b8aa9cf09a85f433f" xsi:type="Composition" />
+    <relationship identifier="id-5a6be95ca4be40abbc0317b806ec7b53" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-b95eba89ef964dd195c5d0835f5dedad" xsi:type="Composition" />
+    <relationship identifier="id-91c2253d615041b5a0150a540c799d98" source="id-1b27e0b973c24b95bc09bdf8a3b262ac" target="id-d8a83a5b66254230ac7c5d5e6439796b" xsi:type="Composition" />
+  </relationships>
+  <organizations>
+    <item>
+      <label xml:lang="en">Business</label>
+      <item identifierRef="id-3eb3511ac1f8430fba666aba30bcb99d" />
+      <item identifierRef="id-5eeffa33a10d42e6a108fae50895163a" />
+      <item identifierRef="id-b1434e76d07a4f5fbb869cf84fa88135" />
+      <item identifierRef="id-845548b9e75e489c8dcc1730322155cf" />
+      <item identifierRef="id-ba24775e8912429b9b818355f1091178" />
+      <item identifierRef="id-e03fdc4e73194406b13b3a8e9e0917e4" />
+      <item identifierRef="id-4da2a0ae351c4fe682b0dcd4e631e122" />
+      <item identifierRef="id-adcb163dd10047b18647a2f41ac20634" />
+      <item identifierRef="id-8fa03f7ea728477480d65e52276108ac" />
+      <item identifierRef="id-97db340517cf45369d4701f94bca7006" />
+      <item identifierRef="id-4b78442f32ff40b591bd9e16905d94b8" />
+      <item identifierRef="id-fcfb5fca6653427c9a6727c220fbc41f" />
+      <item identifierRef="id-5f71ce956b834bc7abe262df197c8455" />
+      <item identifierRef="id-a75012909fd046219a002bc7b79d29e4" />
+      <item identifierRef="id-35f1daa7511945939ca9709c2b0fa691" />
+      <item identifierRef="id-8f2889a736e24da08fedd3424043d81a" />
+      <item identifierRef="id-41066c95fe8243dba0da12c7faae96e3" />
+      <item identifierRef="id-b741609b50894caa9a1455cd61fe1b8b" />
+      <item identifierRef="id-f33ffedca68d4480aab84c730764772f" />
+      <item identifierRef="id-445eeb87940c404da8fe335741c41811" />
+      <item identifierRef="id-878e1244395b4dd6b22671300dfc25b3" />
+      <item identifierRef="id-e1c0572ea00140059cf13d7422ad90f0" />
+      <item identifierRef="id-0d37a910c5a142a592418d4fc382d4f8" />
+      <item identifierRef="id-bc0826a815aa44b784eb755a5a37f08f" />
+      <item identifierRef="id-de2edfe1cea64a66aab72ada90793082" />
+      <item identifierRef="id-7144ff305259424690e27fc06e5e0d6e" />
+      <item identifierRef="id-411a082ca7f94c00be7bbe85ca30f980" />
+      <item identifierRef="id-db7756a51fbc474daa1fa32c410291a3" />
+      <item identifierRef="id-d089ff3c4e79467a9b96800161b100df" />
+      <item identifierRef="id-af89f14cdcbe45f3ab7289c70e9a9749" />
+      <item identifierRef="id-68f35d925f854b448e1ca72660e37347" />
+      <item identifierRef="id-4faa450870e243159a025def9799f780" />
+      <item identifierRef="id-443807eff8e74e03a65b9db2cb6a5682" />
+      <item identifierRef="id-c0c754bc3f0c444e8b1e5ef0b232703a" />
+      <item identifierRef="id-411c188042314e82b27a17c875980028" />
+      <item identifierRef="id-3b205d293e4b4d3094d3775c4f150770" />
+      <item identifierRef="id-0070e513b0e74057abd0a8d0602547d1" />
+      <item identifierRef="id-ece86997eccc46e3b90ac177387995fa" />
+      <item identifierRef="id-0c7c2f1da1314458b2062675b392048e" />
+    </item>
+    <item>
+      <label xml:lang="en">Technology &amp; Physical</label>
+      <item identifierRef="id-1b27e0b973c24b95bc09bdf8a3b262ac" />
+      <item identifierRef="id-c66f20b07418402b8aa9cf09a85f433f" />
+      <item identifierRef="id-f72fa3ba4b5b4fa8aec9d7a11f535e15" />
+      <item identifierRef="id-af39b3f900eb42988747ebbde62e11f0" />
+      <item identifierRef="id-46ac65b15dc246ed876b13611775b715" />
+      <item identifierRef="id-b95eba89ef964dd195c5d0835f5dedad" />
+      <item identifierRef="id-d8a83a5b66254230ac7c5d5e6439796b" />
+      <item identifierRef="id-380f0be0391f4f439215cfd755033acb" />
+      <item identifierRef="id-65177faab52248b383a9fed2d36732f0" />
+      <item identifierRef="id-69366da7c616408385533c4cd90cd0bf" />
+    </item>
+    <item>
+      <label xml:lang="en">Motivation</label>
+      <item identifierRef="id-0c691cb45adf49be9cf085b3105002b2" />
+      <item identifierRef="id-ca348c0a7eb948768562f80ea840494d" />
+      <item identifierRef="id-b9d76b7a6f0d4d13b2c507a673d20644" />
+      <item identifierRef="id-5df1c6bf04c54c91a03602783b55bf61" />
+      <item identifierRef="id-361e6c29ffab455d8bbd67bcdd1d1e94" />
+      <item identifierRef="id-34fc77b18ea64672a388134054aef425" />
+      <item identifierRef="id-3ca68c30ccc341cc99e8d16940b738c5" />
+      <item identifierRef="id-1abed5bd3e67417f8f0de6c2e93e6069" />
+      <item identifierRef="id-c66ccf114f244c91bf3a6df946a8b670" />
+      <item identifierRef="id-f387ac9d0371471c89eaa7fb27a63687" />
+      <item identifierRef="id-fccc873de997443abead48e6ab45bbf9" />
+      <item identifierRef="id-a12f0f2e97c54273b114667accac2904" />
+      <item identifierRef="id-3f607ed7c9be450da38ec1cd1347f40b" />
+      <item identifierRef="id-4bf5850777ec4befbee73ec503427d97" />
+      <item identifierRef="id-36bd248edc284149acd9a0d4b0810ce2" />
+      <item identifierRef="id-a1912ec676bd44c4b84c1105c81a4eb6" />
+      <item identifierRef="id-f1ec19d169dc437b8f0ee5fa75f4d97d" />
+      <item identifierRef="id-ca3b1dd3b004429a952f193a105f53c9" />
+    </item>
+    <item>
+      <label xml:lang="en">Other</label>
+      <item identifierRef="id-62eac66805c1466b97292f2b353a88ab" />
+    </item>
+    <item>
+      <label xml:lang="en">Relations</label>
+      <item identifierRef="id-1894269b18cf4ef4b9723f54e736f338" />
+      <item identifierRef="id-73969b3fab0644e3bab98cdf59ab7b92" />
+      <item identifierRef="id-b8eb2f14ba8d448f9cc6481ca661d308" />
+      <item identifierRef="id-a182cc7439314ff4a1d6237dfe91cef9" />
+      <item identifierRef="id-8c7e5102fdc74bb4aafacd44157c4b91" />
+      <item identifierRef="id-010f5792aa15471c845bae24230ea01e" />
+      <item identifierRef="id-52773d67dd614a8a9ac20131ac19673e" />
+      <item identifierRef="id-753e7f8fbef5472a911399cdb000c35d" />
+      <item identifierRef="id-418a8a3b0ad34a15ae3ae5bf2ff5e39e" />
+      <item identifierRef="id-46d35422700b49daad64a959c3406eb9" />
+      <item identifierRef="id-686661ec80924b348d233482546edff5" />
+      <item identifierRef="id-3be214efa48641fe9ae05fe98d82b01f" />
+      <item identifierRef="id-d0c2f71f33ec415ab0fe4819bed9e826" />
+      <item identifierRef="id-465064ac76734cd1bdafdbb497e0150e" />
+      <item identifierRef="id-87461caf5ec44658a13de168d1ba5ab8" />
+      <item identifierRef="id-c584e9ada338415493b948a2243ce753" />
+      <item identifierRef="id-a2d1592080aa40f3b5bd7a47c6d54ed5" />
+      <item identifierRef="id-f25d1e82826546c79a8411d846110f53" />
+      <item identifierRef="id-a20f5b0cbb224ceca3e231e7e689428f" />
+      <item identifierRef="id-a4c1b2b221d04216aeaceaf1e5ee5f85" />
+      <item identifierRef="id-d199d8da04d94f0280ba32d6b34ce453" />
+      <item identifierRef="id-58a5510fa99440e6a398bbe05a1cbdff" />
+      <item identifierRef="id-82c69a64e4904d38b97880a0b9cefbe1" />
+      <item identifierRef="id-701db55f4018428c9490f7a0de36cae0" />
+      <item identifierRef="id-6b287bcf649240c3b4aaed0648ee81ac" />
+      <item identifierRef="id-0bc66aa70c8b4ff0adf4e9afed3a1e41" />
+      <item identifierRef="id-8ded03eb2f064657899ad37511de4a97" />
+      <item identifierRef="id-fea894b6e5ef4cd399b2fee8c9bef3fb" />
+      <item identifierRef="id-8d0d19c54bb64cc799b6051d118a1c6b" />
+      <item identifierRef="id-9c471fd4909842a586f18289eba16e28" />
+      <item identifierRef="id-a09f0ac9a8764e4ab21d34c905567cf3" />
+      <item identifierRef="id-9cd2f66709244e5d8d7fd3a3992cfa5e" />
+      <item identifierRef="id-5a6be95ca4be40abbc0317b806ec7b53" />
+      <item identifierRef="id-91c2253d615041b5a0150a540c799d98" />
+    </item>
+    <item>
+      <label xml:lang="en">Views</label>
+      <item identifierRef="id-82e903f78427498885e2da998633ec24" />
+      <item identifierRef="id-38bb8551dac8498aa082f09831a91faf" />
+      <item identifierRef="id-c0c681f8de2b43c3b94d43da53f66b1c" />
+      <item identifierRef="id-60100b5aed8149e5866faea4f7a3bd0c" />
+    </item>
+  </organizations>
+  <propertyDefinitions>
+    <propertyDefinition identifier="propid-2" type="string">
+      <name>dct:modified</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-1" type="string">
+      <name>dct:type</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-3" type="string">
+      <name>skos:definition</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+  <views>
+    <diagrams>
+      <view identifier="id-82e903f78427498885e2da998633ec24" xsi:type="Diagram">
+        <name xml:lang="en">People</name>
+        <documentation xml:lang="en">The "People" component details the essential roles within the BizDevOps team. While these roles align with traditional DevOps positions, there is a significant emphasis on certain members taking on new responsibilities to better integrate business and operational objectives into the development process.</documentation>
+        <node identifier="id-f765d59232ed4341a41a95725abfc820" x="24" y="24" w="577" h="325" xsi:type="Container">
+          <label xml:lang="en">People</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-679652f8158c4172bb8e00a4fff2c19c" elementRef="id-3eb3511ac1f8430fba666aba30bcb99d" xsi:type="Element" x="450" y="73" w="120" h="55">
+            <style>
+              <fillColor r="255" g="255" b="181" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-0c0f4570290347819e3698354d36b00c" elementRef="id-5eeffa33a10d42e6a108fae50895163a" xsi:type="Element" x="264" y="72" w="120" h="55">
+            <style>
+              <fillColor r="255" g="255" b="181" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-130fe1b6508e4c0aaf866de306916a69" elementRef="id-b1434e76d07a4f5fbb869cf84fa88135" xsi:type="Element" x="78" y="229" w="132" h="55">
+            <style>
+              <fillColor r="255" g="255" b="181" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-09b2836a67dc4f81a116fd8bff22e0cc" elementRef="id-845548b9e75e489c8dcc1730322155cf" xsi:type="Element" x="264" y="229" w="120" h="55">
+            <style>
+              <fillColor r="255" g="255" b="181" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-9f26690264134a31a5a0d58187458051" elementRef="id-ba24775e8912429b9b818355f1091178" xsi:type="Element" x="84" y="72" w="120" h="55">
+            <style>
+              <fillColor r="255" g="255" b="181" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+        </node>
+        <connection identifier="id-9448ca35de50478e816fb3ac03866a8c" relationshipRef="id-b8eb2f14ba8d448f9cc6481ca661d308" xsi:type="Relationship" source="id-0c0f4570290347819e3698354d36b00c" target="id-09b2836a67dc4f81a116fd8bff22e0cc">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-353c7932de7a4fe8a955f39f927b86e3" relationshipRef="id-a182cc7439314ff4a1d6237dfe91cef9" xsi:type="Relationship" source="id-0c0f4570290347819e3698354d36b00c" target="id-9f26690264134a31a5a0d58187458051">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="294" y="157" />
+          <bendpoint x="186" y="157" />
+        </connection>
+        <connection identifier="id-bb1d64f8ada844cfa635ca70006774c4" relationshipRef="id-73969b3fab0644e3bab98cdf59ab7b92" xsi:type="Relationship" source="id-0c0f4570290347819e3698354d36b00c" target="id-679652f8158c4172bb8e00a4fff2c19c">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="354" y="157" />
+          <bendpoint x="474" y="157" />
+        </connection>
+        <connection identifier="id-50efdb9dbf51463b9609d097f0175ef9" relationshipRef="id-1894269b18cf4ef4b9723f54e736f338" xsi:type="Relationship" source="id-9f26690264134a31a5a0d58187458051" target="id-130fe1b6508e4c0aaf866de306916a69">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+      <view identifier="id-38bb8551dac8498aa082f09831a91faf" xsi:type="Diagram">
+        <name xml:lang="en">Information</name>
+        <documentation xml:lang="en">Each element within the "Information" component is pivotal for the efficacious deployment of BizDevOps in an organizational context, accentuating foundational principles, core values, and critical metrics.</documentation>
+        <node identifier="id-e544614d2a2840c5aba9c6105c93b1a8" x="24" y="36" w="709" h="349" xsi:type="Container">
+          <label xml:lang="en">Principles</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-2de9b31f0e6f478ea26c8649fed83357" elementRef="id-0c691cb45adf49be9cf085b3105002b2" xsi:type="Element" x="312" y="84" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-088835ac80334402a9209cdbdc6e01ce" elementRef="id-ca348c0a7eb948768562f80ea840494d" xsi:type="Element" x="120" y="276" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-33d6d39b5c2645c295d5ccb0d552ddee" elementRef="id-b9d76b7a6f0d4d13b2c507a673d20644" xsi:type="Element" x="252" y="276" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-bc77635448c448919e862382089a23f7" elementRef="id-5df1c6bf04c54c91a03602783b55bf61" xsi:type="Element" x="120" y="192" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-8e843bc7e8cc4c73b2a12e82b94d304f" elementRef="id-361e6c29ffab455d8bbd67bcdd1d1e94" xsi:type="Element" x="252" y="192" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-4d3ed6e5689b4eaab37d16c7e5d1fb7f" elementRef="id-34fc77b18ea64672a388134054aef425" xsi:type="Element" x="384" y="192" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-84d9da8f5b8245a2bf0350a1a67e5886" elementRef="id-3ca68c30ccc341cc99e8d16940b738c5" xsi:type="Element" x="516" y="192" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-53b5c7c510914fb19d3ecef0029af039" elementRef="id-1abed5bd3e67417f8f0de6c2e93e6069" xsi:type="Element" x="384" y="276" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-8da1e0b58da34c0b812b15898d3855d3" elementRef="id-c66ccf114f244c91bf3a6df946a8b670" xsi:type="Element" x="516" y="276" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+        </node>
+        <node identifier="id-0ad83a26658f45ed8ada97533f38dbbd" x="24" y="408" w="709" h="229" xsi:type="Container">
+          <label xml:lang="en">Values</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-4c31dbc002af45c9bec47cb44bb7541a" elementRef="id-f387ac9d0371471c89eaa7fb27a63687" xsi:type="Element" x="324" y="444" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-49c90d85d8ee4bc5af8e5bd8924cefc5" elementRef="id-fccc873de997443abead48e6ab45bbf9" xsi:type="Element" x="72" y="564" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-3c659e89596948f499055b7e60985eaa" elementRef="id-a12f0f2e97c54273b114667accac2904" xsi:type="Element" x="240" y="564" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-46df76d7abd04699a67f0da741b3fe43" elementRef="id-3f607ed7c9be450da38ec1cd1347f40b" xsi:type="Element" x="408" y="564" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-2a3ff113dd2740498696a3c6b21c82d6" elementRef="id-4bf5850777ec4befbee73ec503427d97" xsi:type="Element" x="576" y="564" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+        </node>
+        <node identifier="id-03dabb6502894a94838ca46883be5f72" x="24" y="660" w="709" h="133" xsi:type="Container">
+          <label xml:lang="en">Measurement</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-7ac87c0725994d959ef1c850b35f9a60" elementRef="id-36bd248edc284149acd9a0d4b0810ce2" xsi:type="Element" x="48" y="708" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-f3f892c5c947421d8ffe8e7929f19f5b" elementRef="id-a1912ec676bd44c4b84c1105c81a4eb6" xsi:type="Element" x="396" y="708" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-7f6fb5b2091b4551889d21652e72884c" elementRef="id-f1ec19d169dc437b8f0ee5fa75f4d97d" xsi:type="Element" x="576" y="708" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="id-ea2a917120e2453d9b0ee9b54a579ac8" elementRef="id-ca3b1dd3b004429a952f193a105f53c9" xsi:type="Element" x="240" y="708" w="120" h="55">
+            <style>
+              <fillColor r="204" g="204" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+        </node>
+        <connection identifier="id-26def8ff53a74818894ac67a8442d4af" relationshipRef="id-a20f5b0cbb224ceca3e231e7e689428f" xsi:type="Relationship" source="id-088835ac80334402a9209cdbdc6e01ce" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="72" y="319" />
+          <bendpoint x="72" y="86" />
+        </connection>
+        <connection identifier="id-85e041cc22e74a7a9659d9fa066ac900" relationshipRef="id-87461caf5ec44658a13de168d1ba5ab8" xsi:type="Relationship" source="id-33d6d39b5c2645c295d5ccb0d552ddee" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="312" y="348" />
+          <bendpoint x="96" y="348" />
+          <bendpoint x="96" y="103" />
+        </connection>
+        <connection identifier="id-98bf0a6494cf48fab36409939bd8ae2e" relationshipRef="id-c584e9ada338415493b948a2243ce753" xsi:type="Relationship" source="id-bc77635448c448919e862382089a23f7" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="180" y="161" />
+        </connection>
+        <connection identifier="id-990254802e59495399907489cf30a043" relationshipRef="id-d0c2f71f33ec415ab0fe4819bed9e826" xsi:type="Relationship" source="id-8e843bc7e8cc4c73b2a12e82b94d304f" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="324" y="168" />
+        </connection>
+        <connection identifier="id-0e1f0aef5d644c50baca289620765845" relationshipRef="id-f25d1e82826546c79a8411d846110f53" xsi:type="Relationship" source="id-4d3ed6e5689b4eaab37d16c7e5d1fb7f" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="420" y="168" />
+        </connection>
+        <connection identifier="id-2c35aae3640e4187b0d986dbd1ab79a7" relationshipRef="id-a2d1592080aa40f3b5bd7a47c6d54ed5" xsi:type="Relationship" source="id-84d9da8f5b8245a2bf0350a1a67e5886" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="576" y="161" />
+        </connection>
+        <connection identifier="id-1835a62950384fb69b0a8be5a8ca6fc4" relationshipRef="id-3be214efa48641fe9ae05fe98d82b01f" xsi:type="Relationship" source="id-53b5c7c510914fb19d3ecef0029af039" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="444" y="348" />
+          <bendpoint x="648" y="348" />
+          <bendpoint x="648" y="103" />
+        </connection>
+        <connection identifier="id-0c97532f45fc4198a4e837dc2db1a0a5" relationshipRef="id-465064ac76734cd1bdafdbb497e0150e" xsi:type="Relationship" source="id-8da1e0b58da34c0b812b15898d3855d3" target="id-2de9b31f0e6f478ea26c8649fed83357">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="672" y="319" />
+          <bendpoint x="672" y="86" />
+        </connection>
+        <connection identifier="id-f74f3ff0d58849358f75a18f6576574d" relationshipRef="id-a4c1b2b221d04216aeaceaf1e5ee5f85" xsi:type="Relationship" source="id-49c90d85d8ee4bc5af8e5bd8924cefc5" target="id-4c31dbc002af45c9bec47cb44bb7541a">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-23054a29a51047aeaa8a96b4105e25c1" relationshipRef="id-d199d8da04d94f0280ba32d6b34ce453" xsi:type="Relationship" source="id-3c659e89596948f499055b7e60985eaa" target="id-4c31dbc002af45c9bec47cb44bb7541a">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-bff2b538ff724f06b2b483380957934d" relationshipRef="id-58a5510fa99440e6a398bbe05a1cbdff" xsi:type="Relationship" source="id-46df76d7abd04699a67f0da741b3fe43" target="id-4c31dbc002af45c9bec47cb44bb7541a">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-18151685f9754d8687abc89fee51cd3e" relationshipRef="id-82c69a64e4904d38b97880a0b9cefbe1" xsi:type="Relationship" source="id-2a3ff113dd2740498696a3c6b21c82d6" target="id-4c31dbc002af45c9bec47cb44bb7541a">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-df0ccba6cec44fed9ef308b1e2eb13ad" relationshipRef="id-6b287bcf649240c3b4aaed0648ee81ac" xsi:type="Relationship" source="id-7ac87c0725994d959ef1c850b35f9a60" target="id-ea2a917120e2453d9b0ee9b54a579ac8">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-3edcae7979a44d5d8ebbfbad78ae8016" relationshipRef="id-701db55f4018428c9490f7a0de36cae0" xsi:type="Relationship" source="id-f3f892c5c947421d8ffe8e7929f19f5b" target="id-7f6fb5b2091b4551889d21652e72884c">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+      <view identifier="id-c0c681f8de2b43c3b94d43da53f66b1c" xsi:type="Diagram">
+        <name xml:lang="en">Resources</name>
+        <documentation xml:lang="en">This component details the set of resources related to this business capability, focusing on the toolkit designed to support the values and principles of the BizDevOps approach.</documentation>
+        <node identifier="id-d9f1f6b7298041c0a898c4edd33b6fcc" x="24" y="24" w="577" h="361" xsi:type="Container">
+          <label xml:lang="en">Resources</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-d17af5f9999d48e8aa580ab59d5e483b" elementRef="id-1b27e0b973c24b95bc09bdf8a3b262ac" xsi:type="Element" x="60" y="72" w="505" h="289">
+            <style>
+              <fillColor r="201" g="231" b="183" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+            <node identifier="id-82856aed78424150a9bf704db1d0f726" elementRef="id-c66f20b07418402b8aa9cf09a85f433f" xsi:type="Element" x="72" y="96" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-76672528e01848739c996e0f1661943a" elementRef="id-f72fa3ba4b5b4fa8aec9d7a11f535e15" xsi:type="Element" x="408" y="96" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-39e82048e1fb410ca9a4217ab3eabf08" elementRef="id-af39b3f900eb42988747ebbde62e11f0" xsi:type="Element" x="72" y="180" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-c3b4014004ec46a296f1d98909e168ae" elementRef="id-46ac65b15dc246ed876b13611775b715" xsi:type="Element" x="240" y="270" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-5dc37d2be09f4598848a89cc883606cd" elementRef="id-b95eba89ef964dd195c5d0835f5dedad" xsi:type="Element" x="240" y="96" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-0d09f7b08e314e7c89cf9aef4c41ec1c" elementRef="id-d8a83a5b66254230ac7c5d5e6439796b" xsi:type="Element" x="240" y="180" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-546f8b5400184b14978496ecd5f49d56" elementRef="id-380f0be0391f4f439215cfd755033acb" xsi:type="Element" x="72" y="270" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-8fff59b797b74d5d8f4bafdebe83cd17" elementRef="id-65177faab52248b383a9fed2d36732f0" xsi:type="Element" x="408" y="270" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-4ceccadd63754ae0ae428f2123b004f8" elementRef="id-69366da7c616408385533c4cd90cd0bf" xsi:type="Element" x="408" y="180" w="145" h="73">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+          </node>
+        </node>
+      </view>
+      <view identifier="id-60100b5aed8149e5866faea4f7a3bd0c" xsi:type="Diagram">
+        <name xml:lang="en">Processes</name>
+        <documentation xml:lang="en">The "Processes" component is crucial for aligning and optimizing organizational practices throughout the software lifecycle. This component is structured around standardized processes and continuous alignment between IT and business strategies, ensuring that operations are tailored to enhance product and service delivery.</documentation>
+        <node identifier="id-12b9301bc22b41359a29295c80730858" x="36" y="24" w="1105" h="565" xsi:type="Container">
+          <label xml:lang="en">ISO/IEC/IEEE 32765 DevOps Process Group</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-bbc706cbad204bb3aa6039fc0867f48a" x="684" y="60" w="433" h="217" xsi:type="Container">
+            <label xml:lang="en">Organizational Project-Enabling processes</label>
+            <style>
+              <fillColor r="210" g="215" b="215" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+            <node identifier="id-0a6dfb1d065149d29fa237a3d243fc6c" elementRef="id-db7756a51fbc474daa1fa32c410291a3" xsi:type="Element" x="720" y="96" w="157" h="48">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-76b2f284494545e49997d1ce49404841" elementRef="id-d089ff3c4e79467a9b96800161b100df" xsi:type="Element" x="720" y="156" w="157" h="48">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-fbd97dfe202a4f97861f15dbeadd2798" elementRef="id-af89f14cdcbe45f3ab7289c70e9a9749" xsi:type="Element" x="924" y="96" w="151" h="48">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-9be0d3c6280a43078466d686b824f6dc" elementRef="id-68f35d925f854b448e1ca72660e37347" xsi:type="Element" x="924" y="157" w="151" h="46">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-00d2afe634474f349088b8fbb442370b" elementRef="id-4faa450870e243159a025def9799f780" xsi:type="Element" x="720" y="216" w="157" h="46">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-b225b4a574da4b16980ef6eb16d0b7f6" elementRef="id-443807eff8e74e03a65b9db2cb6a5682" xsi:type="Element" x="924" y="216" w="151" h="46">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+          </node>
+          <node identifier="id-64c947e9b831457cbdef3adc893e241f" x="684" y="288" w="433" h="277" xsi:type="Container">
+            <label xml:lang="en">Technical Management processes</label>
+            <style>
+              <fillColor r="210" g="215" b="215" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+            <node identifier="id-6810dc37e72342b19790cd3b24df64f4" elementRef="id-445eeb87940c404da8fe335741c41811" xsi:type="Element" x="720" y="324" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-83b475e3915a41beb9a8b21b2d25c628" elementRef="id-878e1244395b4dd6b22671300dfc25b3" xsi:type="Element" x="720" y="384" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-c66add80e9a54ec3a75afd49166cce1a" elementRef="id-e1c0572ea00140059cf13d7422ad90f0" xsi:type="Element" x="720" y="444" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-b201bf81079140a8ba6f09679860950c" elementRef="id-0d37a910c5a142a592418d4fc382d4f8" xsi:type="Element" x="720" y="504" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-cb50f71d7c3f43a0ae27ec26cbf66c1d" elementRef="id-bc0826a815aa44b784eb755a5a37f08f" xsi:type="Element" x="924" y="324" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-4667485d770d421e8422bdc9f582ef9d" elementRef="id-de2edfe1cea64a66aab72ada90793082" xsi:type="Element" x="924" y="384" w="157" h="50">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-d7b129a8e2ff4810a97ffdb8d1fca897" elementRef="id-7144ff305259424690e27fc06e5e0d6e" xsi:type="Element" x="924" y="444" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-65d74cd2ffd542f6b3311410c4ffbc75" elementRef="id-411a082ca7f94c00be7bbe85ca30f980" xsi:type="Element" x="924" y="504" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+          </node>
+          <node identifier="id-3fa3308345524e698c84eb81aa1f5e15" x="60" y="168" w="613" h="397" xsi:type="Container">
+            <label xml:lang="en">Technical processes</label>
+            <style>
+              <fillColor r="210" g="215" b="215" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+            <node identifier="id-860581a0455c4e3486abe5c488036d58" elementRef="id-e03fdc4e73194406b13b3a8e9e0917e4" xsi:type="Element" x="96" y="204" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-55d9af2415294050bca36e59dacb1de4" elementRef="id-4da2a0ae351c4fe682b0dcd4e631e122" xsi:type="Element" x="480" y="276" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-c1ff9c5a86294a14a616e11c7dc32706" elementRef="id-adcb163dd10047b18647a2f41ac20634" xsi:type="Element" x="480" y="348" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-eedcb99141ef4f0598f21975875fc315" elementRef="id-8fa03f7ea728477480d65e52276108ac" xsi:type="Element" x="96" y="276" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-5484daf78ec64044b181a52012ce51d6" elementRef="id-97db340517cf45369d4701f94bca7006" xsi:type="Element" x="96" y="348" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-748bd8fb00fe48efbe72f4484f53b925" elementRef="id-4b78442f32ff40b591bd9e16905d94b8" xsi:type="Element" x="96" y="420" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-91d8c16d88ca4abf878600b980e7d018" elementRef="id-fcfb5fca6653427c9a6727c220fbc41f" xsi:type="Element" x="96" y="492" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-b602bff0e34340d59843e35593b39055" elementRef="id-5f71ce956b834bc7abe262df197c8455" xsi:type="Element" x="288" y="204" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-aea8e96850244a3fbfc15a5278b581bd" elementRef="id-a75012909fd046219a002bc7b79d29e4" xsi:type="Element" x="288" y="276" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-69e81a23f338428da8720a9eb6e4fc76" elementRef="id-35f1daa7511945939ca9709c2b0fa691" xsi:type="Element" x="288" y="348" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-7e33a45ad49648cb93613b730a270e4e" elementRef="id-8f2889a736e24da08fedd3424043d81a" xsi:type="Element" x="288" y="420" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-b2c9e42e76804ce8b9a675ca11a68e56" elementRef="id-41066c95fe8243dba0da12c7faae96e3" xsi:type="Element" x="288" y="492" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-0c957f0c15494280a7c8b4989e74177e" elementRef="id-b741609b50894caa9a1455cd61fe1b8b" xsi:type="Element" x="480" y="204" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-03da03dc0f5944b6bae1142dfe826b6e" elementRef="id-f33ffedca68d4480aab84c730764772f" xsi:type="Element" x="480" y="420" w="157" h="61">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+          </node>
+          <node identifier="id-0d380305bc354afbb5661ce404f8a6b6" x="60" y="60" w="613" h="97" xsi:type="Container">
+            <label xml:lang="en">Agreement processes</label>
+            <style>
+              <fillColor r="210" g="215" b="215" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+            <node identifier="id-a355cb34f4e34202b92cd015aefc4032" elementRef="id-c0c754bc3f0c444e8b1e5ef0b232703a" xsi:type="Element" x="96" y="96" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-17cf178eb3dc415589a5c8e7f965f2b6" elementRef="id-411c188042314e82b27a17c875980028" xsi:type="Element" x="288" y="96" w="157" h="49">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+          </node>
+        </node>
+        <node identifier="id-011f2447635a4192a77feb7357f59f1a" x="36" y="612" w="504" h="240" xsi:type="Container">
+          <label xml:lang="en">BizDevOps</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-42d725228b2d4907a9362b2ce63bab68" elementRef="id-62eac66805c1466b97292f2b353a88ab" xsi:type="Element" x="60" y="648" w="457" h="181">
+            <style>
+              <fillColor r="255" g="255" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Segoe UI" size="9">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+            <node identifier="id-7a3289bd4aa14bebb4ed82a7b879b2c0" elementRef="id-3b205d293e4b4d3094d3775c4f150770" xsi:type="Element" x="372" y="672" w="120" h="55">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-ca0f463839134cd7a0c28e750ad50241" elementRef="id-0070e513b0e74057abd0a8d0602547d1" xsi:type="Element" x="228" y="672" w="120" h="55">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-11e75dd1dbe24559bf3009f7e9e3858f" elementRef="id-ece86997eccc46e3b90ac177387995fa" xsi:type="Element" x="84" y="672" w="120" h="55">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-3178bdf9d18b472b96a9562d68081bb2" elementRef="id-0c7c2f1da1314458b2062675b392048e" xsi:type="Element" x="84" y="756" w="408" h="55">
+              <style>
+                <fillColor r="255" g="255" b="181" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Segoe UI" size="9">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+          </node>
+        </node>
+        <connection identifier="id-223488423b774f2dad2ce9ad7c60d0d8" relationshipRef="id-8c7e5102fdc74bb4aafacd44157c4b91" xsi:type="Relationship" source="id-ca0f463839134cd7a0c28e750ad50241" target="id-7a3289bd4aa14bebb4ed82a7b879b2c0">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-603e159007754185abaf9a749f01f189" relationshipRef="id-686661ec80924b348d233482546edff5" xsi:type="Relationship" source="id-11e75dd1dbe24559bf3009f7e9e3858f" target="id-ca0f463839134cd7a0c28e750ad50241">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="id-d7ae7aa656934cdea99290a17c8b3e77" relationshipRef="id-418a8a3b0ad34a15ae3ae5bf2ff5e39e" xsi:type="Relationship" source="id-3178bdf9d18b472b96a9562d68081bb2" target="id-11e75dd1dbe24559bf3009f7e9e3858f">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Segoe UI" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+    </diagrams>
+  </views>
+</model>

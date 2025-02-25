@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>BizDevOps Business Capability</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>BizDevOps Business Capability</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Context
+BizDevOps-BC is a business capability designed to facilitate the transition from DevOps to BizDevOps, enabling organizations to integrate business concerns into the software development lifecycle while maintaining agility.&#8203;
+This business capability supports organizations that have adopted DevOps but struggle with IT/business alignment, providing a structured framework to identify and develop essential components for this transition
+&#8203;
+
+Purpose
+The purpose of BizDevOps-BC is to define the fundamental elements required for IT-business alignment in BizDevOps without prescribing specific implementation details&#8203;. By doing so, it helps organizations understand and develop the core capabilities necessary to embed business objectives into software development processes, ensuring that technical efforts directly support strategic goals
+&#8203;
+
+Objective
+BizDevOps-BC aims to provide organizations with a structured means of assessing and developing the necessary capabilities for transitioning to BizDevOps&#8203;. This includes defining key elements across four dimensions:
+
+- People: Roles with responsibilities focused on IT-business alignment (e.g., Product Owner with Alignment Manager duties, Agility Manager)&#8203;.
+- Processes: Incorporation of continuous IT-business alignment processes alongside standard DevOps practices&#8203;.
+- Information: Principles, values, and metrics governing processes and decision-making&#8203;.
+- Resources: Tools and technologies that support BizDevOps practices and facilitate collaboration&#8203;.
+
+
+BizDevOps-BC focuses on:
+- IT/Business Alignment: Ensuring that software development efforts align with business goals without compromising agility&#8203;.
+- Decision-Making: Providing a framework for prioritizing development initiatives based on business impact rather than solely technical considerations&#8203;.
+- Scalability and Flexibility: Enabling organizations to maintain IT-business alignment in dynamic and complex environments by structuring development efforts around business capabilities&#8203;.
+
+
+In summary, BizDevOps-BC serves as a foundational capability that helps organizations transition from DevOps to BizDevOps by structuring IT-business alignment around essential business components, ensuring that agility is preserved while fostering business-driven software &lt;development&#8203;.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-b814229a4fff4880a620fb8a1afa0535", type:"ArchimateModel", name:decodeURL("BizDevOps+Business+Capability"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-765abd6726df482eaf1a15fbbb71b303", contenttype:"Folder"});
+								dataFolders.push({id:"id-765abd6726df482eaf1a15fbbb71b303", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-c782d5d202354d02b18aa5f8314d8478", contenttype:"Folder"});
+								dataFolders.push({id:"id-c782d5d202354d02b18aa5f8314d8478", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-3eb3511ac1f8430fba666aba30bcb99d", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-3eb3511ac1f8430fba666aba30bcb99d", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("Agility+Manager"), documentation:decodeURL("This+view+presents+the+ABBs+that+guide+the+development+of+a+software+product+with+BizDevOps.")});
+													dataProperties.push({conceptid:"id-3eb3511ac1f8430fba666aba30bcb99d", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AAgilityManager")});
+													dataProperties.push({conceptid:"id-3eb3511ac1f8430fba666aba30bcb99d", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F04%2F2024")});
+													dataProperties.push({conceptid:"id-3eb3511ac1f8430fba666aba30bcb99d", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("In+BizDevOps%2C+this+role+ensures+the+team+remains+agile+across+all+phases+of+the+approach.+They+create+an+environment+for+efficient+and+productive+work.+In+Scrum+and+similar+frameworks%2C+this+role+is+often+filled+by+the+Scrum+Master.")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-5eeffa33a10d42e6a108fae50895163a", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-5eeffa33a10d42e6a108fae50895163a", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("BizDevOps+Team"), documentation:decodeURL("Definition%3A+The+BizDevOps+Team+is+a+cross-functional+unit+that+integrates+roles+from+business%2C+development%2C+and+operations+to+ensure+continuous+IT+alignment+with+business+objectives+and+agility.+It+includes+positions+such+as+Product+Owner+and+Agility+Manager%2C+supported+by+DevOps+roles%2C+fostering+collaboration+to+streamline+software+delivery+and+maximize+value")});
+													dataProperties.push({conceptid:"id-5eeffa33a10d42e6a108fae50895163a", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ABizDevOpsTeam")});
+													dataProperties.push({conceptid:"id-5eeffa33a10d42e6a108fae50895163a", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("08%2F07%2F2024")});
+													dataProperties.push({conceptid:"id-5eeffa33a10d42e6a108fae50895163a", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("The+BizDevOps+Team+is+a+cross-functional+unit+that+integrates+roles+from+business%2C+development%2C+and+operations+to+ensure+continuous+IT+alignment+with+business+objectives+and+agility.+It+includes+positions+such+as+Product+Owner+and+Agility+Manager%2C+supported+by+DevOps+roles%2C+fostering+collaboration+to+streamline+software+delivery+and+maximize+value")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-b1434e76d07a4f5fbb869cf84fa88135", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-b1434e76d07a4f5fbb869cf84fa88135", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("Alignment+Manager"), documentation:decodeURL("Definition%3A+In+BizDevOps%2C+this+role+is+pivotal+in+ensuring+that+the+product+aligns+with+business+needs+and+creates+added+value.+The+primary+focus+of+the+Alignment+Manager+shifts+towards+facilitating+IT-business+alignment%2C+emphasizing+their+responsibility+to+align+IT+strategies+closely+with+business+objectives.+This+redefined+focus+expands+their+traditional+role+of+bridging+the+gap+between+business+stakeholders+and+the+IT+team%2C+ensuring+that+the+product+delivers+maximum+value+in+line+with+business+priorities.")});
+													dataProperties.push({conceptid:"id-b1434e76d07a4f5fbb869cf84fa88135", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AAlignmentManager")});
+													dataProperties.push({conceptid:"id-b1434e76d07a4f5fbb869cf84fa88135", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F10%2F2024")});
+													dataProperties.push({conceptid:"id-b1434e76d07a4f5fbb869cf84fa88135", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("In+BizDevOps%2C+this+role+is+pivotal+in+ensuring+that+the+product+aligns+with+business+needs+and+creates+added+value.+The+primary+focus+of+the+Product+Owner+shifts+towards+facilitating+IT-business+alignment%2C+emphasizing+their+responsibility+to+align+IT+strategies+closely+with+business+objectives.+This+redefined+focus+expands+their+traditional+role+of+bridging+the+gap+between+business+stakeholders+and+the+IT+team%2C+ensuring+that+the+product+delivers+maximum+value+in+line+with+business+priorities.")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-845548b9e75e489c8dcc1730322155cf", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-845548b9e75e489c8dcc1730322155cf", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("DevOps+Roles"), documentation:decodeURL("Definition%3A+DevOps+roles%2C+including+IT+Development+and+Operations%3B+DevOps+Architect%3B+Other+DevOps+roles+defined+in+the+organization.")});
+													dataProperties.push({conceptid:"id-845548b9e75e489c8dcc1730322155cf", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ADevOpsRoles")});
+													dataProperties.push({conceptid:"id-845548b9e75e489c8dcc1730322155cf", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("08%2F09%2F2024")});
+													dataProperties.push({conceptid:"id-845548b9e75e489c8dcc1730322155cf", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("DevOps+roles%2C+including+IT+Development+and+Operations%3B+DevOps+Architect%3B+Other+DevOps+roles+defined+in+the+organization.")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-ba24775e8912429b9b818355f1091178", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-ba24775e8912429b9b818355f1091178", type:"BusinessRole", specialization:decodeURL(""), name:decodeURL("Product+Owner"), documentation:decodeURL("Definition%3A+A+role+responsible+for+defining+and+communicating+product+vision+to+meet+business+needs.")});
+													dataProperties.push({conceptid:"id-ba24775e8912429b9b818355f1091178", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AProductOwner")});
+													dataProperties.push({conceptid:"id-ba24775e8912429b9b818355f1091178", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("01%2F12%2F2024")});
+													dataProperties.push({conceptid:"id-ba24775e8912429b9b818355f1091178", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("A+role+responsible+for+defining+and+communicating+product+vision+to+meet+business+needs.")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-e03fdc4e73194406b13b3a8e9e0917e4", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-e03fdc4e73194406b13b3a8e9e0917e4", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Business+or+Mission+Analysis"), documentation:decodeURL("The+purpose+of+the+Business+or+Mission+Analysis+process+is+to+define+the+business+or+mission+problem+or+opportunity%2C+characterize+the+solution+space%2C+and+determine+potential+solution+class%28es%29+that+could+address+a+problem+or+take+advantage+of+an+opportunity.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.1.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-4da2a0ae351c4fe682b0dcd4e631e122", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-4da2a0ae351c4fe682b0dcd4e631e122", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Operation"), documentation:decodeURL("The+purpose+of+the+Operation+process+is+to+use+the+system+to+deliver+its+services.%0D%0AThis+process+establishes+requirements+for+and+assigns+personnel+to+operate+the+system%2C+and+monitors+the+services+and+operator-system+performance.+In+order+to+sustain+services%2C+it+identifies+and+analyses+operational+anomalies+in+relation+to+agreements%2C+stakeholder+requirements+and+organizational+constraints.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.12.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-adcb163dd10047b18647a2f41ac20634", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-adcb163dd10047b18647a2f41ac20634", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Maintenance"), documentation:decodeURL("The+purpose+of+the+Maintenance+process+is+to+sustain+the+capability+of+the+system+to+provide+a+service.%0D%0AThis+process+monitors+the+system%E2%80%99s+capability+to+deliver+services%2C+records+incidents+for+analysis%2C+takes+corrective%2C+adaptive%2C+perfective+and+preventive+actions+and+confirms+restored+capability.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.13.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-8fa03f7ea728477480d65e52276108ac", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-8fa03f7ea728477480d65e52276108ac", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Stakeholder+Needs+and+Requirements+Definition"), documentation:decodeURL("The+purpose+of+the+Stakeholder+Needs+and+Requirements+Definition+process+is+to+define+the+stakeholder+requirements+for+a+system+that+can+provide+the+capabilities+needed+by+users+and+other+stakeholders+in+a+defined+environment.%0D%0AIt+identifies+stakeholders%2C+or+stakeholder+classes%2C+involved+with+the+system+throughout+its+life+cycle%2C+and+their+needs.+It+analyzes+and+transforms+these+needs+into+a+common+set+of+stakeholder+requirements+that+express+the+intended+interaction+the+system+will+have+with+its+operational+environment+and+that+are+the+reference+against+which+each+resulting+operational+capability+is+validated.+The+stakeholder+requirements+re+defined+considering+the+context+of+the+system-of-interest+with+the+interoperating+systems+and+enabling+systems.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.2.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-97db340517cf45369d4701f94bca7006", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-97db340517cf45369d4701f94bca7006", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("System%2FSoftware+Requirements+Definitions+"), documentation:decodeURL("The+purpose+of+the+System%2FSoftware+Requirements+Definition+process+is+to+transform+the+stakeholder%2C+user-oriented+view+of+desired+capabilities+into+a+technical+view+of+a+solution+that+meets+the+operational+needs+of+the+user.%0D%0AThis+process+creates+a+set+of+measurable+system+requirements+that+specify%2C+from+the+supplier%E2%80%99s+perspective%2C+what+characteristics%2C+attributes%2C+and+functional+and+performance+requirements+the+system+is+to+possess%2C+in+order+to+satisfy+stakeholder+requirements.+As+far+as+constraints+permit%2C+the+requirements+should+not+imply+any+specific+implementation.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.3.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-4b78442f32ff40b591bd9e16905d94b8", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-4b78442f32ff40b591bd9e16905d94b8", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Architecture+Definition+"), documentation:decodeURL("The+purpose+of+the+Architecture+Definition+process+is+to+generate+system+architecture+alternatives%2C+to+select+one+or+more+alternative%28s%29+that+frame+stakeholder+concerns+and+meet+system+requirements%2C+and+to+express+this+in+a+set+of+consistent+views.%0D%0AIteration+of+the+Architecture+Definition+process+with+the+Business+or+Mission+Analysis+process%2C+System%2FSoftware+Requirements+Definition+process%2C+Design+Definition+process%2C+and+Stakeholder+Needs+and+Requirements+Definition+process+is+often+employed+so+that+there+is+a+negotiated+understanding+of+the+problem+to+be+solved+and+a+satisfactory+solution+is+identified.+The+results+of+the+Architecture+Definition+process+are+widely+used+across+the+life+cycle+processes.+Architecture+definition+may+be+applied+at+many+levels+of+abstraction%2C+highlighting+the+relevant+detail+that+is+necessary+for+the+decisions+at+that+level.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.4.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-fcfb5fca6653427c9a6727c220fbc41f", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-fcfb5fca6653427c9a6727c220fbc41f", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Design+Definition+"), documentation:decodeURL("The+purpose+of+the+Design+Definition+process+is+to+provide+sufficient+detailed+data+and+information+about+the+system+and+its+elements+to+enable+the+implementation+consistent+with+architectural+entities+as+defined+in+models+and+views+of+the+system+architecture.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.5.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-5f71ce956b834bc7abe262df197c8455", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-5f71ce956b834bc7abe262df197c8455", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("System+Analysis+"), documentation:decodeURL("The+purpose+of+the+System+Analysis+process+is+to+provide+a+rigorous+basis+of+data+and+information+for+technical+understanding+to+aid+decision-making+across+the+life+cycle.%0D%0AThe+System+Analysis+process+applies+to+the+development+of+inputs+needed+for+any+technical+assessment.+It+can+provide+confidence+in+the+utility+and+integrity+of+system+requirements%2C+architecture%2C+and+design.+System+analysis+covers+a+wide+range+of+differing+analytic+functions%2C+levels+of+complexity%2C+and+levels+of+rigor.+It+includes+mathematical+analysis%2C+modelling%2C+simulation%2C+experimentation%2C+and+other+techniques+to+analyze+technical+performance%2C+system+behavior%2C+feasibility%2C+affordability%2C+critical+quality+characteristics%2C+technical+risks%2C+life+cycle+costs%2C+and+to+perform+sensitivity+analysis+of+the+potential+range+of+values+for+parameters+across+all+life+cycle+stages.+It+is+used+for+a+wide+range+of+analytical+needs+concerning+operational+concepts%2C+determination+of+requirement+values%2C+resolution+of+requirements+conflicts%2C+assessment+of+alternative+architectures+or+system+elements%2C+and+evaluation+of+engineering+strategies+%28integration%2C+verification%2C+validation%2C+and+maintenance%29.+Formality+and+rigor+of+the+analysis+will+depend+on+the+criticality+of+the+information+need+or+work+product+supported%2C+the+amount+of+information%2Fdata+available%2C+the+size+of+the+project%2C+and+the+schedule+for+the+results.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.6.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-a75012909fd046219a002bc7b79d29e4", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-a75012909fd046219a002bc7b79d29e4", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Implementation+"), documentation:decodeURL("The+purpose+of+the+Implementation+process+is+to+realize+a+specified+system+element.%0D%0AThis+process+transforms+requirements%2C+architecture%2C+and+design%2C+including+interfaces%2C+into+actions+that+create+a+system+element+according+to+the+practices+of+the+selected+implementation+technology%2C+using+appropriate+technical+specialties+or+disciplines.+This+process+results+in+a+system+element+that+satisfies+specified+system+requirements+%28including+allocated+and+derived+requirements%29%2C+architecture%2C+and+design.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.7.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-35f1daa7511945939ca9709c2b0fa691", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-35f1daa7511945939ca9709c2b0fa691", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Integration+"), documentation:decodeURL("The+purpose+of+the+Integration+process+is+to+synthesize+a+set+of+system+elements+into+a+realized+system+%28product+or+service%29+that+satisfies+system%2Fsoftware+requirements%2C+architecture%2C+and+design.%0D%0AThis+process+assembles+the+implemented+system+elements.+Interfaces+are+identified+and+activated+to+enable+interoperation+of+the+system+elements+as+intended.+This+process+integrates+the+enabling+systems+with+the+system-of-interest+to+facilitate+interoperation.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.8.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-8f2889a736e24da08fedd3424043d81a", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-8f2889a736e24da08fedd3424043d81a", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Verification+"), documentation:decodeURL("The+purpose+of+the+Verification+process+is+to+provide+objective+evidence+that+a+system+or+system+element+fulfills+its+specified+requirements+and+characteristics.%0D%0AThe+Verification+process+identifies+the+anomalies+%28errors%2C+defects%2C+or+faults%29+in+any+information+item+%28e.g.%2C+system%2Fsoftware+requirements+or+architecture+description%29%2C+implemented+system+elements%2C+or+life+cycle+processes+using+appropriate+methods%2C+techniques%2C+standards+or+rules.+This+process+provides+the+necessary+information+to+determine+resolution+of+identified+anomalies.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.9.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-41066c95fe8243dba0da12c7faae96e3", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-41066c95fe8243dba0da12c7faae96e3", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Transition+"), documentation:decodeURL("The+purpose+of+the+Transition+process+is+to+establish+a+capability+for+a+system+to+provide+services+specified+by+stakeholder+requirements+in+the+operational+environment.%0D%0AThis+process+moves+the+system+in+an+orderly%2C+planned+manner+into+the+operational+status%2C+such+that+the+system+is+functional%2C+operable+and+compatible+with+other+operational+systems.+It+installs+a+verified+system%2C+together+with+relevant+enabling+systems%2C+e.g.%2C+planning+system%2C+support+system%2C+operator+training+system%2C+user+training+system%2C+as+defined+in+agreements.+This+process+is+used+at+each+level+in+the+system+structure%0D%0Aand+in+each+stage+to+complete+the+criteria+established+for+exiting+the+stage.+It+includes+preparing+applicable+storage%2C+handling%2C+and+shipping+enabling+systems.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.10.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-b741609b50894caa9a1455cd61fe1b8b", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-b741609b50894caa9a1455cd61fe1b8b", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Validation+"), documentation:decodeURL("The+purpose+of+the+Validation+process+is+to+provide+objective+evidence+that+the+system%2C+when+in+use%2C+fulfils+its+business+or+mission+objectives+and+stakeholder+requirements%2C+achieving+its+intended+use+in+its+intended+operational+environment.%0D%0AThe+objective+of+validating+a+system+or+system+element+is+to+acquire+confidence+in+its+ability+to+achieve+its+intended+mission%2C+or+use%2C+under+specific+operational+conditions.+Validation+is+ratified+by+stakeholders.+This+process+provides+the+necessary+information+so+that+identified+anomalies+can+be+resolved+by+the+appropriate+technical+process+where+the+anomaly+was+created.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.11.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-f33ffedca68d4480aab84c730764772f", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-f33ffedca68d4480aab84c730764772f", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Disposal+"), documentation:decodeURL("The+purpose+of+the+Disposal+process+is+to+end+the+existence+of+a+system+element+or+system+for+a+specified+intended+use%2C+appropriately+handle+replaced+or+retired+elements%2C+and+to+properly+attend+to+identified+critical+disposal+needs+%28e.g.%2C+per+an+agreement%2C+per+organizational+policy%2C+or+for+environmental%2C+legal%2C+safety%2C+security+aspects%29.%0D%0AThis+process+deactivates%2C+disassembles+and+removes+the+system+or+any+of+its+elements+from+the+specific+use.+It+addresses+any+waste+products%2C+consigning+them+to+a+final+condition+and+returning+the+environment+to+its+original+or+an+acceptable+condition.+The+waste+products+can+be+in-process+resulting+during+any+life+cycle+stage%2C+e.g.%2C+waste+materials+during+fabrication.+This+process+destroys%2C+stores%2C+or+reclaims+system+elements+and+waste+products+in+an+environmentally+sound+manner%2C+in+accordance+with+legislation%2C+agreements%2C+organizational+constraints+and+stakeholder+requirements.+Disposal+includes+preventing+expired%2C+nonreusable%2C+or+inadequate+elements+from+getting+back+into+the+supply+chain.+Where+required%2C+it+maintains+records+in+order+that+the+health+of+operators+and+users%2C+and+the+safety+of+the+environment%2C+can+be+monitored.+When+part+of+the+system+will+continue+to+be+in+use+in+a+modified+form%2C+the+Disposal+process+helps+ensure+the+proper+handling+of+the+portion+being+retired.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.4.14.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-445eeb87940c404da8fe335741c41811", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-445eeb87940c404da8fe335741c41811", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Project+Planning"), documentation:decodeURL("The+purpose+of+the+Project+Planning+process+is+to+produce+and+coordinate+effective+and+workable+plans.%0D%0AThis+process+determines+the+scope+of+the+project+management+and+technical+activities%2C+identifies+process+outputs%2C+tasks+and+deliverables%2C+establishes+schedules+for+task+conduct%2C+including+achievement+criteria%2C+and+required+resources+to+accomplish+tasks.+This+is+an+ongoing+process+that+continues+throughout+a+project%2C+with+regular+revisions+to+plans.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.3.1.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-878e1244395b4dd6b22671300dfc25b3", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-878e1244395b4dd6b22671300dfc25b3", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Project+Assessment+and+Control"), documentation:decodeURL("The+purpose+of+the+Project+Assessment+and+Control+process+is+to+assess+if+the+plans+are+aligned+and+feasible%3B+determine+the+status+of+the+project%2C+technical+and+process+performance%3B+and+direct+execution+to+help+ensure+that+the+performance+is+according+to+plans+and+schedules%2C+within+projected+budgets%2C+to+satisfy+technical+objectives.%0D%0AThis+process+evaluates%2C+periodically+and+at+major+events%2C+the+progress+and+achievements+against+requirements%2C+plans+and+overall+business+objectives.+Information+is+provided+for+management+action+when+significant+variances+are+detected.+This+process+also+includes+redirecting+the+project+activities+and+tasks%2C+as+appropriate%2C+to+correct+identified+deviations+and+variations+from+other+technical+management+or+technical+processes.+Redirection+may+include+re-planning+as+appropriate.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.3.2.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-e1c0572ea00140059cf13d7422ad90f0", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-e1c0572ea00140059cf13d7422ad90f0", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Decision+Management"), documentation:decodeURL("The+purpose+of+the+Decision+Management+process+is+to+provide+a+structured%2C+analytical+framework+for+objectively+identifying%2C+characterizing+and+evaluating+a+set+of+alternatives+for+a+decision+at+any+point+in+the+life+cycle+and+select+the+most+beneficial+course+of+action.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.3.3.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-0d37a910c5a142a592418d4fc382d4f8", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-0d37a910c5a142a592418d4fc382d4f8", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Risk+Management"), documentation:decodeURL("The+purpose+of+the+Risk+Management+process+is+to+identify%2C+analyze%2C+treat+and+monitor+the+risks+continually.%0D%0AThe+Risk+Management+process+is+a+continual+process+for+systematically+addressing+risk+throughout+the+life+cycle+of+a+system+product+or+service.+It+can+be+applied+to+risks+related+to+the+acquisition%2C+development%2C+maintenance+or+operation+of+a+system.+%28ISO%2FIEC%2FIEEE+12207-2017%2C+6.3.4.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-bc0826a815aa44b784eb755a5a37f08f", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-bc0826a815aa44b784eb755a5a37f08f", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Configuration+Management+"), documentation:decodeURL("The+purpose+of+Configuration+Management+is+to+manage+and+control+system+elements+and+configurations+over+the+life+cycle.+Configuration+Management+%28CM%29+also+manages+consistency+between+a+product+and+its+associated+configuration+definition.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.3.5.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-de2edfe1cea64a66aab72ada90793082", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-de2edfe1cea64a66aab72ada90793082", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Information+Management+"), documentation:decodeURL("The+purpose+of+the+Information+Management+process+is+to+generate%2C+obtain%2C+confirm%2C+transform%2C+retain%2C+retrieve%2C+disseminate+and+dispose+of+information%2C+to+designated+stakeholders.%0D%0AInformation+management+plans%2C+executes%2C+and+controls+the+provision+of+information+to+designated+stakeholders+that+is+unambiguous%2C+complete%2C+verifiable%2C+consistent%2C+modifiable%2C+traceable%2C+and+presentable.+Information+includes+technical%2C+project%2C+organizational%2C+agreement%2C+and+user+information.+Information+is+often+derived+from+data+records+of+the+organization%2C+system%2C+process%2C+or+project.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.3.6.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-7144ff305259424690e27fc06e5e0d6e", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-7144ff305259424690e27fc06e5e0d6e", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Measurement"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-411a082ca7f94c00be7bbe85ca30f980", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-411a082ca7f94c00be7bbe85ca30f980", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Quality+Assurance+"), documentation:decodeURL("The+purpose+of+the+Quality+Assurance+process+is+to+help+ensure+the+effective+application+of+the+organization%E2%80%99s+Quality+Management+process+to+the+project.%0D%0AQuality+Assurance+focuses+on+providing+confidence+that+quality+requirements+will+be+fulfilled.+Proactive+analysis+of+the+project+life+cycle+processes+and+outputs+is+performed+to+assure+that+the+product+being+produced+will+be+of+the+desired+quality+and+that+organization+and+project+policies+and+procedures+are+followed.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.3.8.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-db7756a51fbc474daa1fa32c410291a3", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-db7756a51fbc474daa1fa32c410291a3", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Portfolio+Management"), documentation:decodeURL("The+purpose+of+the+Portfolio+Management+process+is+to+initiate+and+sustain+necessary%2C+sufficient+and+suitable+projects+in+order+to+meet+the+strategic+objectives+of+the+organization.%0D%0AThis+process+commits+the+investment+of+adequate+organization+funding+and+resources%2C+and+sanctions+the+authorities+needed+to+establish+selected+projects.+It+performs+continued+assessment+of+projects+to+confirm+they+justify%2C+or+can+be+redirected+to+justify%2C+continued+investment.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.2.3.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-d089ff3c4e79467a9b96800161b100df", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-d089ff3c4e79467a9b96800161b100df", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Knowledge+Management+"), documentation:decodeURL("The+purpose+of+the+Knowledge+Management+process+is+to+create+the+capability+and+assets+that+enable+the+organization+to+exploit+opportunities+to+re%E2%80%90apply+existing+knowledge.%0D%0AThis+encompasses+knowledge%2C+skills%2C+and+knowledge+assets%2C+including+system+elements+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.2.6.1%29.")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-af89f14cdcbe45f3ab7289c70e9a9749", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-af89f14cdcbe45f3ab7289c70e9a9749", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Quality+Management"), documentation:decodeURL("The+purpose+of+the+Quality+Management+process+is+to+assure+that+products%2C+services+and+implementations+of+the+quality+management+process+meet+organizational+and+project+quality+objectives+and+achieve+customer+satisfaction.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.2.5.1%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-68f35d925f854b448e1ca72660e37347", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-68f35d925f854b448e1ca72660e37347", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Life+Cycle+Model+Management"), documentation:decodeURL("The+purpose+of+the+Life+Cycle+Model+Management+process+is+to+define%2C+maintain%2C+and+assure+availability+of+policies%2C+life+cycle+processes%2C+life+cycle+models%2C+and+procedures+for+use+by+the+organization+with+respect+to+the+scope+of+this+document.%0D%0AThis+process+provides+life+cycle+policies%2C+processes%2C+models%2C+and+procedures+that+are+consistent+with+the+organization%E2%80%99s+objectives%2C+that+are+defined%2C+adapted%2C+improved+and+maintained+to+support+individual+project+needs+within+the+context+of+the+organization%2C+and+that+are+capable+of+being+applied+using+effective%2C+proven+methods+and+tools.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.2.1.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-4faa450870e243159a025def9799f780", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-4faa450870e243159a025def9799f780", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Human+Resource+Management"), documentation:decodeURL("The+purpose+of+the+Human+Resource+Management+process+is+to+provide+the+organization+with+necessary+human+resources+and+to+maintain+their+competencies%2C+consistent+with+business+needs.%0D%0AThis+process+provides+a+supply+of+skilled+and+experienced+personnel+qualified+to+perform+life+cycle+processes+to+achieve+organization%2C+project%2C+and+stakeholder+objectives.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.2.4.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-443807eff8e74e03a65b9db2cb6a5682", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-443807eff8e74e03a65b9db2cb6a5682", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Infrastructure+Management+"), documentation:decodeURL("The+purpose+of+the+Infrastructure+Management+process+is+to+provide+the+enabling+infrastructure+and+services+to+projects+to+support+organization+and+project+objectives+throughout+the+life+cycle.%0D%0AThis+process+defines%2C+provides+and+maintains+the+facilities%2C+tools%2C+and+communications+and+information+technology+assets+needed+for+the+organization%E2%80%99s+business+with+respect+to+the+scope+of+this+document.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.2.2.1%29%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-c0c754bc3f0c444e8b1e5ef0b232703a", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-c0c754bc3f0c444e8b1e5ef0b232703a", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Acquisition"), documentation:decodeURL("The+purpose+of+the+Supply+process+is+to+provide+an+acquirer+with+a+product+or+service+that+meets+agreed+requirements.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.1.2.1%29%0D%0A%0D%0A")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-411c188042314e82b27a17c875980028", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-411c188042314e82b27a17c875980028", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Supply"), documentation:decodeURL("The+purpose+of+the+Supply+process+is+to+provide+an+acquirer+with+a+product+or+service+that+meets+agreed+requirements.+%28ISO%2FIEC%2FIEEE+12207%3A2017%2C+6.1.2.2%29")});
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-3b205d293e4b4d3094d3775c4f150770", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-3b205d293e4b4d3094d3775c4f150770", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Planification"), documentation:decodeURL("Definition%3A+The+Planification+Process+in+BizDevOps+is+a+crucial+stage+where+realistic+timelines%2C+resources%2C+and+project+milestones+are+set.+This+phase+involves+creating+a+detailed+roadmap+that+outlines+the+necessary+steps+to+deliver+the+product%2C+ensuring+that+all+team+members+are+aligned+and+prepared+for+execution.+During+planning%2C+the+BizDevOps+team+estimates+and+plans+the+product+increments+to+be+developed+in+the+upcoming+period.+Continuous+planning+practice+is+common+in+many+organizations%2C+and+incremental+planning+events+%28PI%29+serve+as+essential+alignment+loops+to+create+a+unified+vision+of+product+features%2C+planning%2C+team+dependencies%2C+and+other+necessary+components+to+add+value+to+the+end+user.+In+this+process%2C+product+backlog+management+is+conducted+continuously+and+incrementally%2C+with+constant+updates+at+various+levels+of+granularity%2C+from+high-level+solutions+to+team-level+user+stories.+The+Product+Owner+is+responsible+for+defining+and+prioritizing+what+will+be+built+in+the+upcoming+product+increments.+%0D%0A")});
+													dataProperties.push({conceptid:"id-3b205d293e4b4d3094d3775c4f150770", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3APlanificationProcess")});
+													dataProperties.push({conceptid:"id-3b205d293e4b4d3094d3775c4f150770", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("11%2F07%2F2024")});
+													dataProperties.push({conceptid:"id-3b205d293e4b4d3094d3775c4f150770", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("The+Planification+Process+in+BizDevOps+is+a+crucial+stage+where+realistic+timelines%2C+resources%2C+and+project+milestones+are+set.+This+phase+involves+creating+a+detailed+roadmap+that+outlines+the+necessary+steps+to+deliver+the+product%2C+ensuring+that+all+team+members+are+aligned+and+prepared+for+execution.+During+planning%2C+the+BizDevOps+team+estimates+and+plans+the+product+increments+to+be+developed+in+the+upcoming+period.+Continuous+planning+practice+is+common+in+many+organizations%2C+and+incremental+planning+events+%28PI%29+serve+as+essential+alignment+loops+to+create+a+unified+vision+of+product+features%2C+planning%2C+team+dependencies%2C+and+other+necessary+components+to+add+value+to+the+end+user.+In+this+process%2C+product+backlog+management+is+conducted+continuously+and+incrementally%2C+with+constant+updates+at+various+levels+of+granularity%2C+from+high-level+solutions+to+team-level+user+stories.+The+Product+Owner+is+responsible+for+defining+and+prioritizing+what+will+be+built+in+the+upcoming+product+increments.+")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-0070e513b0e74057abd0a8d0602547d1", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-0070e513b0e74057abd0a8d0602547d1", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Definition"), documentation:decodeURL("Definition%3A+The+Definition+Process+in+BizDevOps+is+a+critical+phase+that+focuses+on+the+detailed+specification+of+the+product%2C+encompassing+both+functional+and+non-functional+requirements.+This+stage+is+essential+to+ensure+that+the+development+team+has+a+clear+and+precise+understanding+of+what+needs+to+be+built.+During+this+phase%2C+specific+product+goals+are+established+and+the+necessary+features+and+functionalities+to+meet+these+goals+are+precisely+defined.+The+collaboration+between+business+stakeholders+and+development+teams+is+intense%2C+allowing+business+requirements+to+be+translated+into+detailed+technical+specifications.+This+process+ensures+that+all+members+of+the+development+team+are+aligned+with+the+product%27s+vision+and+objectives%2C+minimizing+the+possibility+of+misunderstandings+and+errors+during+subsequent+development+and+operation+phases.+Clarity+and+specificity+in+this+phase+are+crucial+for+the+efficiency+and+effectiveness+of+software+development%2C+ensuring+that+the+final+product+meets+business+and+end-user+expectations.%0D%0A")});
+													dataProperties.push({conceptid:"id-0070e513b0e74057abd0a8d0602547d1", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ADefinitionProcess")});
+													dataProperties.push({conceptid:"id-0070e513b0e74057abd0a8d0602547d1", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("11%2F07%2F2024")});
+													dataProperties.push({conceptid:"id-0070e513b0e74057abd0a8d0602547d1", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("The+Definition+Process+in+BizDevOps+is+a+critical+phase+that+focuses+on+the+detailed+specification+of+the+product%2C+encompassing+both+functional+and+non-functional+requirements.+This+stage+is+essential+to+ensure+that+the+development+team+has+a+clear+and+precise+understanding+of+what+needs+to+be+built.+During+this+phase%2C+specific+product+goals+are+established+and+the+necessary+features+and+functionalities+to+meet+these+goals+are+precisely+defined.+The+collaboration+between+business+stakeholders+and+development+teams+is+intense%2C+allowing+business+requirements+to+be+translated+into+detailed+technical+specifications.+This+process+ensures+that+all+members+of+the+development+team+are+aligned+with+the+product%27s+vision+and+objectives%2C+minimizing+the+possibility+of+misunderstandings+and+errors+during+subsequent+development+and+operation+phases.+Clarity+and+specificity+in+this+phase+are+crucial+for+the+efficiency+and+effectiveness+of+software+development%2C+ensuring+that+the+final+product+meets+business+and+end-user+expectations.")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-ece86997eccc46e3b90ac177387995fa", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-ece86997eccc46e3b90ac177387995fa", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Discovery"), documentation:decodeURL("Definition%3A+The+Discovery+Process+in+BizDevOps+is+a+fundamental+phase+that+focuses+on+identifying+and+understanding+customer+needs+and+problems%2C+as+well+as+exploring+new+market+opportunities.+This+initial+process+is+crucial+for+establishing+alignment+between+business+objectives+and+technical+capabilities%2C+ensuring+that+subsequent+software+development+efforts+are+geared+towards+delivering+maximum+value+to+the+end+user.+During+this+phase%2C+the+BizDevOps+team+gathers+information+from+multiple+sources%2C+including+insights+from+business+experts%2C+analysts%2C+and+key+users%2C+to+form+a+detailed+understanding+of+the+underlying+problem+and+market+needs.+Defining+high-level+business+goals+and+creating+a+clear+product+vision+are+critical+activities+in+this+phase%2C+allowing+for+the+establishment+of+hypotheses+that+will+guide+further+experimentation+and+validation+with+user+feedback.+This+iterative+and+user-centered+approach+ensures+that+development+efforts+are+continuously+aligned+with+business+and+market+expectations%2C+minimizing+risks+and+costs+associated+with+unexpected+changes+and+failures+in+later+stages%E2%80%8B.%0D%0A")});
+													dataProperties.push({conceptid:"id-ece86997eccc46e3b90ac177387995fa", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ADiscoveryProcess")});
+													dataProperties.push({conceptid:"id-ece86997eccc46e3b90ac177387995fa", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("11%2F07%2F2024")});
+													dataProperties.push({conceptid:"id-ece86997eccc46e3b90ac177387995fa", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("The+Discovery+Process+in+BizDevOps+is+a+fundamental+phase+that+focuses+on+identifying+and+understanding+customer+needs+and+problems%2C+as+well+as+exploring+new+market+opportunities.+This+initial+process+is+crucial+for+establishing+alignment+between+business+objectives+and+technical+capabilities%2C+ensuring+that+subsequent+software+development+efforts+are+geared+towards+delivering+maximum+value+to+the+end+user.+During+this+phase%2C+the+BizDevOps+team+gathers+information+from+multiple+sources%2C+including+insights+from+business+experts%2C+analysts%2C+and+key+users%2C+to+form+a+detailed+understanding+of+the+underlying+problem+and+market+needs.+Defining+high-level+business+goals+and+creating+a+clear+product+vision+are+critical+activities+in+this+phase%2C+allowing+for+the+establishment+of+hypotheses+that+will+guide+further+experimentation+and+validation+with+user+feedback.+This+iterative+and+user-centered+approach+ensures+that+development+efforts+are+continuously+aligned+with+business+and+market+expectations%2C+minimizing+risks+and+costs+associated+with+unexpected+changes+and+failures+in+later+stages%E2%80%8B")});
+
+									dataFoldersContent.push({folderid:"id-c782d5d202354d02b18aa5f8314d8478", contentid:"id-0c7c2f1da1314458b2062675b392048e", contenttype:"BusinessProcess"});
+										dataElements.push({id:"id-0c7c2f1da1314458b2062675b392048e", type:"BusinessProcess", specialization:decodeURL(""), name:decodeURL("Alignment"), documentation:decodeURL("Definition%3A+The+Alignment+Process+in+BizDevOps+is+fundamental+to+ensuring+that+software+development+activities+are+continuously+synchronized+with+business+objectives.+This+process+addresses+the+challenge+of+integrating+business+and+IT+domains%2C+ensuring+that+the+strategies%2C+goals%2C+and+practices+of+both+are+aligned+to+maximize+the+value+delivered+to+end+users+and+maintain+business+agility.%0D%0A%0D%0AAlignment+in+BizDevOps+focuses+on+two+essential+components%3A+people+and+processes.+Regarding+people%2C+it+involves+ensuring+that+all+actors+involved%2C+both+from+business+and+IT%2C+work+towards+the+same+goals.+This+is+achieved+by+forming+cross-functional+and+autonomous+BizDevOps+teams%2C+where+each+member+possesses+skills+both+in+their+specialty+and+in+other+areas+of+the+team%2C+promoting+closer+collaboration+and+a+better+understanding+between+different+roles.+Process+alignment+involves+integrating+agile+and+DevOps+practices+with+business+strategies%2C+facilitating+continuous+and+effective+communication+between+business+stakeholders+and+development+teams.%0D%0A%0D%0AA+crucial+aspect+of+the+alignment+process+is+the+implementation+of+short+and+frequent+feedback+cycles%2C+which+allow+the+BizDevOps+team+to+receive+valuable+insights+from+end+users+and+make+necessary+adjustments+to+continuously+improve+the+product.+This+iterative+and+data-driven+approach+ensures+that+software+development+not+only+meets+technical+requirements+but+also+aligns+with+market+expectations+and+needs.+Additionally%2C+the+use+of+specific+metrics+and+KPIs+helps+evaluate+the+performance+of+the+team+and+the+product%2C+ensuring+that+decisions+are+made+based+on+accurate+and+up-to-date+information.%0D%0A%0D%0AFinally%2C+continuous+alignment+in+BizDevOps+not+only+focuses+on+delivering+high-quality+software+but+also+on+creating+a+collaborative+and+adaptable+environment+that+can+quickly+respond+to+changes+in+business+and+market+demands%2C+always+maintaining+a+user-centered+vision.%0D%0A")});
+													dataProperties.push({conceptid:"id-0c7c2f1da1314458b2062675b392048e", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AAlignmentProcess")});
+													dataProperties.push({conceptid:"id-0c7c2f1da1314458b2062675b392048e", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("11%2F07%2F2024")});
+													dataProperties.push({conceptid:"id-0c7c2f1da1314458b2062675b392048e", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("The+Alignment+Process+in+BizDevOps+is+fundamental+to+ensuring+that+software+development+activities+are+continuously+synchronized+with+business+objectives.+This+process+addresses+the+challenge+of+integrating+business+and+IT+domains%2C+ensuring+that+the+strategies%2C+goals%2C+and+practices+of+both+are+aligned+to+maximize+the+value+delivered+to+end+users+and+maintain+business+agility.")});
+
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-1d868205ebeb45a48f42130bf1aa880e", contenttype:"Folder"});
+								dataFolders.push({id:"id-1d868205ebeb45a48f42130bf1aa880e", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-5c531688c10848b6b53255164597a2eb", contenttype:"Folder"});
+								dataFolders.push({id:"id-5c531688c10848b6b53255164597a2eb", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-1b27e0b973c24b95bc09bdf8a3b262ac", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("BizDevOps+Bus+Service"), documentation:decodeURL("Definition%3A+The+BizDevOps+Bus+Service+is+a+Technology+Service%2C+serving+as+a+foundational+component+for+organizations+adopting+the+BizDevOps+approach.+This+service+provides+an+integrated+set+of+tools+and+practices+to+support+collaboration+between+business%2C+development%2C+and+operations%2C+ensuring+alignment+and+continuous+delivery+of+value.%0D%0A")});
+													dataProperties.push({conceptid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ABizDevOpsBusTechService")});
+													dataProperties.push({conceptid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("The+BizDevOps+Bus+Service+is+a+Technology+Service%2C+serving+as+a+foundational+component+for+organizations+adopting+the+BizDevOps+approach.+This+service+provides+an+integrated+set+of+tools+and+practices+to+support+collaboration+between+business%2C+development%2C+and+operations%2C+ensuring+alignment+and+continuous+delivery+of+value.")});
+
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-c66f20b07418402b8aa9cf09a85f433f", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-c66f20b07418402b8aa9cf09a85f433f", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("IT+Governance+and+IT%2FBusiness+Alignment+Service"), documentation:decodeURL("Description%3A+Ensures+alignment+between+business+strategic+objectives+and+technological+capabilities+through+governance+and+enterprise+architecture+practices.%0D%0A%0D%0AExample%3A%0D%0A+-+Use+of+ArchiMate+notation+to+model+and+visualize+IT%2FBusiness+alignment+using+tools+like+Archi.%0D%0A-+Definition+of+architectural+policies+and+principles+to+guide+the+implementation+of+solutions%2C+ensuring+consistency+with+organizational+goals.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Facilitates+strategic+planning+and+traceability+of+technological+initiatives+based+on+business+outcomes.%0D%0A-+Enhances+stakeholder+communication+through+standardized+models.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-f72fa3ba4b5b4fa8aec9d7a11f535e15", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-f72fa3ba4b5b4fa8aec9d7a11f535e15", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("Documentation+and+Knowledge+Management+Service"), documentation:decodeURL("Description%3A+Facilitates+the+creation%2C+storage%2C+and+distribution+of+organizational+documentation+and+knowledge.%0D%0A%0D%0AExample%3A%0D%0A-+Implementation+of+a+platform+like+Confluence+to+centralize+technical+documentation%2C+procedures%2C+and+organizational+learnings.%0D%0A-+Integration+with+other+tools+for+efficient+search+and+retrieval+of+critical+information.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Promotes+knowledge+reuse+and+reduces+duplicated+efforts.%0D%0A-+Enhances+business+continuity+by+providing+easy+access+to+key+information.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-af39b3f900eb42988747ebbde62e11f0", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-af39b3f900eb42988747ebbde62e11f0", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("Repository+and+Control+Version+Service"), documentation:decodeURL("Description%3A+Provides+centralized+management+of+source+code+and+version+control+to+support+collaborative+work.%0D%0A%0D%0AExample%3A%0D%0A-+Use+of+tools+like+GitHub%2C+GitLab%2C+or+Bitbucket+to+manage+repositories%2C+perform+code+reviews%2C+and+enable+automated+integrations.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Ensures+traceability+of+changes+and+improves+code+quality+through+collaborative+reviews.%0D%0A-+Facilitates+continuous+integration+and+teamwork+in+distributed+environments.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-46ac65b15dc246ed876b13611775b715", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-46ac65b15dc246ed876b13611775b715", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("Monitoring+and+Logging+Service"), documentation:decodeURL("Description%3A+Provides+capabilities+to+monitor+and+analyze+the+performance+of+systems%2C+applications%2C+and+services.%0D%0A%0D%0AExample%3A%0D%0A-+Use+of+tools+like+Prometheus+for+metrics+and+alerts%2C+and+Grafana+for+data+visualization.%0D%0A-+Implementation+of+solutions+like+ELK+Stack+%28Elasticsearch%2C+Logstash%2C+Kibana%29+for+log+analysis.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Enables+proactive+problem+identification+and+continuous+optimization.%0D%0A-+Enhances+end-user+experience+by+ensuring+service+stability.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-b95eba89ef964dd195c5d0835f5dedad", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-b95eba89ef964dd195c5d0835f5dedad", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("Agile+Projects+Management+Service"), documentation:decodeURL("Description%3A+Provides+support+for+agile+project+management%2C+promoting+collaboration+and+adaptability+through+agile+tools.%0D%0A%0D%0AExample%3A%0D%0A-+Use+of+Jira+for+task+management%2C+backlog+prioritization%2C+and+real-time+project+tracking.%0D%0A-+Configuration+of+Kanban+or+Scrum+boards+to+ensure+transparency+and+progress+monitoring.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Improves+project+visibility+and+enables+data-driven+decision-making.%0D%0A-+Allows+rapid+adaptation+to+changing+business+requirements.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-d8a83a5b66254230ac7c5d5e6439796b", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-d8a83a5b66254230ac7c5d5e6439796b", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("IDE+Service"), documentation:decodeURL("Description%3A+Offers+integrated+development+environments+that+optimize+developer+productivity.%0D%0A%0D%0AExample%3A%0D%0A-+Use+of+IDEs+like+IntelliJ+IDEA%2C+Visual+Studio+Code%2C+or+Eclipse%2C+configured+with+plugins+for+repository+integration%2C+testing+tools%2C+and+CI%2FCD+pipelines.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Boosts+development+efficiency+by+integrating+multiple+tools+into+a+single+environment.%0D%0A-+Facilitates+collaboration+among+developers+through+standardized+setups.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-380f0be0391f4f439215cfd755033acb", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-380f0be0391f4f439215cfd755033acb", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("Continuous+Integration+and+Delivery+Service"), documentation:decodeURL("Description%3A+Supports+automated+pipelines+for+building%2C+testing%2C+and+deploying+software+continuously.%0D%0A%0D%0AExample%3A%0D%0A-+Use+of+tools+like+Jenkins%2C+GitLab+CI%2FCD%2C+or+CircleCI+to+configure+integration+and+deployment+workflows.%0D%0A-+Implementation+of+automated+tests+and+progressive+deployments+to+development%2C+staging%2C+and+production+environments.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Accelerates+software+delivery+without+compromising+quality.%0D%0A-+Facilitates+rapid+feedback+and+continuous+iteration.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-65177faab52248b383a9fed2d36732f0", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-65177faab52248b383a9fed2d36732f0", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("Infrastructure+Automation+Service"), documentation:decodeURL("Description%3A+Automates+the+provisioning%2C+configuration%2C+and+management+of+infrastructure+using+Infrastructure+as+Code+%28IaC%29+practices.%0D%0A%0D%0AExample%3A%0D%0A-+Use+of+tools+like+Terraform%2C+Ansible%2C+or+AWS+CloudFormation+to+deploy+and+manage+dynamic+and+scalable+infrastructures.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Reduces+human+errors+and+deployment+times.%0D%0A-+Provides+consistent+and+reproducible+environments.")});
+									dataFoldersContent.push({folderid:"id-5c531688c10848b6b53255164597a2eb", contentid:"id-69366da7c616408385533c4cd90cd0bf", contenttype:"TechnologyService"});
+										dataElements.push({id:"id-69366da7c616408385533c4cd90cd0bf", type:"TechnologyService", specialization:decodeURL(""), name:decodeURL("Testing+Service"), documentation:decodeURL("Description%3A+Automates+functional%2C+performance%2C+and+integration+testing+to+ensure+software+quality.%0D%0A%0D%0AExample%3A%0D%0A-+Use+of+frameworks+like+Selenium+for+functional+tests+and+JMeter+for+load+testing.%0D%0A-+Integration+with+CI%2FCD+pipelines+to+automatically+execute+tests+on+each+commit.%0D%0A%0D%0AValue+Added%3A%0D%0A-+Detects+defects+early%2C+reducing+associated+resolution+costs.%0D%0A-+Enhances+confidence+in+the+quality+of+deliveries.")});
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contenttype:"Folder"});
+								dataFolders.push({id:"id-ff01bb213d6a4cf79e4206c93af4d83f", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-0c691cb45adf49be9cf085b3105002b2", contenttype:"Principle"});
+										dataElements.push({id:"id-0c691cb45adf49be9cf085b3105002b2", type:"Principle", specialization:decodeURL(""), name:decodeURL("BizDevOps+Principle"), documentation:decodeURL("Definition%3A+BizDevOps+principles+are+fundamental+guidelines+that+integrate+business%2C+development%2C+and+operations+practices+to+enhance+collaboration%2C+accelerate+delivery%2C+and+align+IT+efforts+with+business+objectives.%0D%0A")});
+													dataProperties.push({conceptid:"id-0c691cb45adf49be9cf085b3105002b2", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ABizDevOpsPrinciple")});
+													dataProperties.push({conceptid:"id-0c691cb45adf49be9cf085b3105002b2", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-0c691cb45adf49be9cf085b3105002b2", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("BizDevOps+principles+are+fundamental+guidelines+that+integrate+business%2C+development%2C+and+operations+practices+to+enhance+collaboration%2C+accelerate+delivery%2C+and+align+IT+efforts+with+business+objectives.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-ca348c0a7eb948768562f80ea840494d", contenttype:"Principle"});
+										dataElements.push({id:"id-ca348c0a7eb948768562f80ea840494d", type:"Principle", specialization:decodeURL(""), name:decodeURL("Alignment"), documentation:decodeURL("Definition%3A+Ensures+continuous+alignment+of+IT+initiatives+with+business+objectives.")});
+													dataProperties.push({conceptid:"id-ca348c0a7eb948768562f80ea840494d", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AAlignmentPrinciple")});
+													dataProperties.push({conceptid:"id-ca348c0a7eb948768562f80ea840494d", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-ca348c0a7eb948768562f80ea840494d", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Ensures+continuous+alignment+of+IT+initiatives+with+business+objectives.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-b9d76b7a6f0d4d13b2c507a673d20644", contenttype:"Principle"});
+										dataElements.push({id:"id-b9d76b7a6f0d4d13b2c507a673d20644", type:"Principle", specialization:decodeURL(""), name:decodeURL("Agility"), documentation:decodeURL("Definition%3A+Incorporates+agility+throughout+all+operational+cycles.")});
+													dataProperties.push({conceptid:"id-b9d76b7a6f0d4d13b2c507a673d20644", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AAgilityPrinciple")});
+													dataProperties.push({conceptid:"id-b9d76b7a6f0d4d13b2c507a673d20644", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-b9d76b7a6f0d4d13b2c507a673d20644", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Incorporates+agility+throughout+all+operational+cycles.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-5df1c6bf04c54c91a03602783b55bf61", contenttype:"Principle"});
+										dataElements.push({id:"id-5df1c6bf04c54c91a03602783b55bf61", type:"Principle", specialization:decodeURL(""), name:decodeURL("Integrated+Team"), documentation:decodeURL("Definition%3A+Rather+than+having+separate+teams%2C+BizDevOps+involves+a+unified+team+with+roles+spanning+business%2C+development%2C+and+operations+to+collaboratively+meet+software+needs.%0D%0A")});
+													dataProperties.push({conceptid:"id-5df1c6bf04c54c91a03602783b55bf61", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AIntegratedTeamPrinciple")});
+													dataProperties.push({conceptid:"id-5df1c6bf04c54c91a03602783b55bf61", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-5df1c6bf04c54c91a03602783b55bf61", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Rather+than+having+separate+teams%2C+BizDevOps+involves+a+unified+team+with+roles+spanning+business%2C+development%2C+and+operations+to+collaboratively+meet+software+needs.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-361e6c29ffab455d8bbd67bcdd1d1e94", contenttype:"Principle"});
+										dataElements.push({id:"id-361e6c29ffab455d8bbd67bcdd1d1e94", type:"Principle", specialization:decodeURL(""), name:decodeURL("Business+First"), documentation:decodeURL("Definition%3A+Prioritizes+organizational+objectives+over+technical+details.%0D%0A")});
+													dataProperties.push({conceptid:"id-361e6c29ffab455d8bbd67bcdd1d1e94", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ABusinessFirstPrinciple")});
+													dataProperties.push({conceptid:"id-361e6c29ffab455d8bbd67bcdd1d1e94", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-361e6c29ffab455d8bbd67bcdd1d1e94", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Prioritizes+organizational+objectives+over+technical+details.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-34fc77b18ea64672a388134054aef425", contenttype:"Principle"});
+										dataElements.push({id:"id-34fc77b18ea64672a388134054aef425", type:"Principle", specialization:decodeURL(""), name:decodeURL("Customer+Focus"), documentation:decodeURL("Definition%3A+Adopts+a+customer-centered+approach%2C+prioritizing+tasks+to+deliver+maximum+value+and+effectively+managing+risks.%0D%0A")});
+													dataProperties.push({conceptid:"id-34fc77b18ea64672a388134054aef425", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ACustomerFocusPrinciple")});
+													dataProperties.push({conceptid:"id-34fc77b18ea64672a388134054aef425", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-34fc77b18ea64672a388134054aef425", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Adopts+a+customer-centered+approach%2C+prioritizing+tasks+to+deliver+maximum+value+and+effectively+managing+risks.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-3ca68c30ccc341cc99e8d16940b738c5", contenttype:"Principle"});
+										dataElements.push({id:"id-3ca68c30ccc341cc99e8d16940b738c5", type:"Principle", specialization:decodeURL(""), name:decodeURL("Shift-Left"), documentation:decodeURL("Definition%3A+Anticipates+tasks+typically+performed+at+the+later+stages+of+development%2C+such+as+quality+and+security+testing%2C+to+address+them+earlier+in+the+lifecycle.%0D%0A")});
+													dataProperties.push({conceptid:"id-3ca68c30ccc341cc99e8d16940b738c5", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AShiftLeftPrinciple")});
+													dataProperties.push({conceptid:"id-3ca68c30ccc341cc99e8d16940b738c5", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-3ca68c30ccc341cc99e8d16940b738c5", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Anticipates+tasks+typically+performed+at+the+later+stages+of+development%2C+such+as+quality+and+security+testing%2C+to+address+them+earlier+in+the+lifecycle.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-1abed5bd3e67417f8f0de6c2e93e6069", contenttype:"Principle"});
+										dataElements.push({id:"id-1abed5bd3e67417f8f0de6c2e93e6069", type:"Principle", specialization:decodeURL(""), name:decodeURL("Continuity+in+Everything"), documentation:decodeURL("Definition%3A+Utilizes+automated+practices+across+business%2C+development%2C+and+operations+to+maintain+continuous+process+flow.")});
+													dataProperties.push({conceptid:"id-1abed5bd3e67417f8f0de6c2e93e6069", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AContinuityInEverythingPrinciple")});
+													dataProperties.push({conceptid:"id-1abed5bd3e67417f8f0de6c2e93e6069", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-1abed5bd3e67417f8f0de6c2e93e6069", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Utilizes+automated+practices+across+business%2C+development%2C+and+operations+to+maintain+continuous+process+flow.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-c66ccf114f244c91bf3a6df946a8b670", contenttype:"Principle"});
+										dataElements.push({id:"id-c66ccf114f244c91bf3a6df946a8b670", type:"Principle", specialization:decodeURL(""), name:decodeURL("Systems+Thinking"), documentation:decodeURL("Definition%3A+Promotes+a+comprehensive+understanding+of+the+system+from+start+to+finish%2C+aiding+in+the+resolution+of+complex+issues+that+may+arise.%0D%0A")});
+													dataProperties.push({conceptid:"id-c66ccf114f244c91bf3a6df946a8b670", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3ASystemsThinkingPrinciple")});
+													dataProperties.push({conceptid:"id-c66ccf114f244c91bf3a6df946a8b670", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-c66ccf114f244c91bf3a6df946a8b670", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Promotes+a+comprehensive+understanding+of+the+system+from+start+to+finish%2C+aiding+in+the+resolution+of+complex+issues+that+may+arise.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-f387ac9d0371471c89eaa7fb27a63687", contenttype:"Value"});
+										dataElements.push({id:"id-f387ac9d0371471c89eaa7fb27a63687", type:"Value", specialization:decodeURL(""), name:decodeURL("CAMS+Values"), documentation:decodeURL("In+BizDevOps%2C+the+CAMS+values+%28Culture%2C+Automation%2C+Measurement%2C+Sharing%29+extend+beyond+DevOps+by+integrating+business+alignment.+Culture+fosters+collaboration+across+business%2C+development%2C+and+operations.+Automation+goes+beyond+CI%2FCD+to+include+business+process+automation.+Measurement+incorporates+business+KPIs+alongside+traditional+DevOps+metrics.+Sharing+ensures+transparency+and+cross-functional+decision-making%2C+aligning+software+delivery+with+strategic+business+goals.")});
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-fccc873de997443abead48e6ab45bbf9", contenttype:"Value"});
+										dataElements.push({id:"id-fccc873de997443abead48e6ab45bbf9", type:"Value", specialization:decodeURL(""), name:decodeURL("Culture"), documentation:decodeURL("Encourages+a+culture+of+shared+responsibility+and+common+goals%2C+fostering+communication%2C+collaboration%2C+trust%2C+transparency%2C+and+a+unified+pursuit+of+objectives.")});
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-a12f0f2e97c54273b114667accac2904", contenttype:"Value"});
+										dataElements.push({id:"id-a12f0f2e97c54273b114667accac2904", type:"Value", specialization:decodeURL(""), name:decodeURL("Automation"), documentation:decodeURL("Emphasizes+the+automation+of+all+processes+to+minimize+delays%2C+enabling+rapid+delivery+and+prompt+responses+from+end+users.")});
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-3f607ed7c9be450da38ec1cd1347f40b", contenttype:"Value"});
+										dataElements.push({id:"id-3f607ed7c9be450da38ec1cd1347f40b", type:"Value", specialization:decodeURL(""), name:decodeURL("Measurement"), documentation:decodeURL("Focuses+on+continuous+improvement+and+visibility+across+all+systems+and+practices+by+measuring+as+much+as+is+useful+and+feasible%2C+which+supports+informed+decision-making.")});
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-4bf5850777ec4befbee73ec503427d97", contenttype:"Value"});
+										dataElements.push({id:"id-4bf5850777ec4befbee73ec503427d97", type:"Value", specialization:decodeURL(""), name:decodeURL("Sharing"), documentation:decodeURL("Establishes+robust+communication+channels+for+ongoing+dialogue+among+team+members%2C+facilitating+the+sharing+of+concerns+and+knowledge+related+to+software+projects.")});
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-36bd248edc284149acd9a0d4b0810ce2", contenttype:"Driver"});
+										dataElements.push({id:"id-36bd248edc284149acd9a0d4b0810ce2", type:"Driver", specialization:decodeURL(""), name:decodeURL("IT%2FBusiness+Alignment"), documentation:decodeURL("Definition%3A+An+IT%2FBusiness+Alignment+Driver+is+a+motivating+factor+that+ensures+IT+strategies+and+services+are+integrated+with+and+support+business+goals.+This+alignment+enhances+efficiency%2C+drives+competitive+advantage%2C+and+creates+value+for+the+organization+by+ensuring+that+IT+capabilities+directly+contribute+to+business+success.")});
+													dataProperties.push({conceptid:"id-36bd248edc284149acd9a0d4b0810ce2", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AITBizAlignmentDriver")});
+													dataProperties.push({conceptid:"id-36bd248edc284149acd9a0d4b0810ce2", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-36bd248edc284149acd9a0d4b0810ce2", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("An+IT%2FBusiness+Alignment+Driver+is+a+motivating+factor+that+ensures+IT+strategies+and+services+are+integrated+with+and+support+business+goals.+This+alignment+enhances+efficiency%2C+drives+competitive+advantage%2C+and+creates+value+for+the+organization+by+ensuring+that+IT+capabilities+directly+contribute+to+business+success.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-a1912ec676bd44c4b84c1105c81a4eb6", contenttype:"Driver"});
+										dataElements.push({id:"id-a1912ec676bd44c4b84c1105c81a4eb6", type:"Driver", specialization:decodeURL(""), name:decodeURL("Agile+Software+Development"), documentation:decodeURL("Definition%3A+An+Agile+Software+Development+Driver+is+a+motivating+factor+that+promotes+the+adoption+of+agile+methodologies+to+enhance+flexibility%2C+speed%2C+and+collaboration+in+software+development.+It+aims+to+deliver+high-quality+software+incrementally%2C+respond+quickly+to+changes%2C+and+meet+customer+needs+effectively+through+iterative+development+and+continuous+feedback.")});
+													dataProperties.push({conceptid:"id-a1912ec676bd44c4b84c1105c81a4eb6", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDOAgileSwDevelopmentDriver")});
+													dataProperties.push({conceptid:"id-a1912ec676bd44c4b84c1105c81a4eb6", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-a1912ec676bd44c4b84c1105c81a4eb6", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("An+Agile+Software+Development+Driver+is+a+motivating+factor+that+promotes+the+adoption+of+agile+methodologies+to+enhance+flexibility%2C+speed%2C+and+collaboration+in+software+development.+It+aims+to+deliver+high-quality+software+incrementally%2C+respond+quickly+to+changes%2C+and+meet+customer+needs+effectively+through+iterative+development+and+continuous+feedback.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-f1ec19d169dc437b8f0ee5fa75f4d97d", contenttype:"Assessment"});
+										dataElements.push({id:"id-f1ec19d169dc437b8f0ee5fa75f4d97d", type:"Assessment", specialization:decodeURL(""), name:decodeURL("Agility+is+Maintained+in+the+SW+project"), documentation:decodeURL("Definition%3A+Agility+is+Maintained+in+the+SW+project+is+an+assessment+indicating+that+the+organization+continues+to+operate+with+flexibility+and+responsiveness.+It+ensures+that+processes%2C+teams%2C+and+technologies+can+quickly+adapt+to+changes%2C+meet+evolving+customer+needs%2C+and+support+continuous+improvement+and+innovation.%0D%0A%0D%0AMetrics+Examples%3A%0D%0A1.+Team+Velocity%3A+Measures+the+amount+of+work+a+team+can+complete+during+a+sprint%2C+usually+expressed+in+story+points.+This+metric+helps+teams+forecast+the+amount+of+work+they+can+take+on+in+future+sprints.%0D%0A2.+Burndown+Chart%3A+A+chart+that+shows+the+amount+of+work+remaining+in+the+sprint+versus+time.+It%27s+useful+for+seeing+if+a+team+is+on+track+to+complete+the+sprint+work+on+time.%0D%0A3.+Burnup+Chart%3A+Similar+to+the+burndown+chart%2C+but+it+shows+progress+towards+a+larger+goal%2C+like+a+product+release.+This+chart+shows+both+the+completed+work+and+the+total+planned+work%2C+allowing+for+a+clear+view+of+how+much+remains+to+reach+the+final+goal.%0D%0A4.+Cycle+Time%3A+Measures+the+time+it+takes+to+complete+a+task+from+when+it+starts+until+it+finishes.+This+metric+can+help+identify+bottlenecks+in+the+process.%0D%0A5.+Completion+Rate%3A+Calculates+the+percentage+of+tasks+that+are+completed+compared+to+the+total+tasks+started.+It%27s+useful+for+evaluating+the+team%27s+efficiency+and+delivery+capability.%0D%0A6.+Lead+Time%3A+Measures+the+time+it+takes+for+the+team+to+start+working+on+a+new+task+or+request.+A+quick+response+can+be+indicative+of+good+workflow+and+agility+in+the+team.%0D%0A7.+Commitment+vs.+Achievement%3A+This+metric+compares+what+the+team+committed+to+deliver+at+the+start+of+a+sprint+with+what+they+actually+delivered+at+the+end.+It+can+help+understand+planning+accuracy+and+the+team%27s+ability+to+deliver.%0D%0A")});
+													dataProperties.push({conceptid:"id-f1ec19d169dc437b8f0ee5fa75f4d97d", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AAgilityMaintainedAssessment")});
+													dataProperties.push({conceptid:"id-f1ec19d169dc437b8f0ee5fa75f4d97d", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-f1ec19d169dc437b8f0ee5fa75f4d97d", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("Agility+is+Maintained+in+the+SW+project+is+an+assessment+indicating+that+the+organization+continues+to+operate+with+flexibility+and+responsiveness.+It+ensures+that+processes%2C+teams%2C+and+technologies+can+quickly+adapt+to+changes%2C+meet+evolving+customer+needs%2C+and+support+continuous+improvement+and+innovation.")});
+
+									dataFoldersContent.push({folderid:"id-ff01bb213d6a4cf79e4206c93af4d83f", contentid:"id-ca3b1dd3b004429a952f193a105f53c9", contenttype:"Assessment"});
+										dataElements.push({id:"id-ca3b1dd3b004429a952f193a105f53c9", type:"Assessment", specialization:decodeURL(""), name:decodeURL("SW+project+is+aligned+with+business"), documentation:decodeURL("Definition%3A+SW+project+is+aligned+with+business+is+an+assessment+indicating+that+IT+initiatives%2C+resources%2C+and+strategies+effectively+support+and+enhance+business+goals.+This+alignment+ensures+cohesive+operations%2C+maximizes+efficiency%2C+and+drives+organizational+success+by+ensuring+that+IT+contributions+are+directly+aligned+with+business+needs+and+objectives.%0D%0A%0D%0AMetrics+Examples%3A+%28source%3A+https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F9263839%29%0D%0A%0D%0A1.+Number+of+applications+by+business+process.%0D%0A2.+Number+of+business+process+by+objetive")});
+													dataProperties.push({conceptid:"id-ca3b1dd3b004429a952f193a105f53c9", propkey:decodeURL("dct%3Atype"), propvalue:decodeURL("BDO%3AITBusinessAlignmentAssessment")});
+													dataProperties.push({conceptid:"id-ca3b1dd3b004429a952f193a105f53c9", propkey:decodeURL("dct%3Amodified"), propvalue:decodeURL("10%2F06%2F2024")});
+													dataProperties.push({conceptid:"id-ca3b1dd3b004429a952f193a105f53c9", propkey:decodeURL("skos%3Adefinition"), propvalue:decodeURL("SW+project+is+aligned+with+business+is+an+assessment+indicating+that+IT+initiatives%2C+resources%2C+and+strategies+effectively+support+and+enhance+business+goals.+This+alignment+ensures+cohesive+operations%2C+maximizes+efficiency%2C+and+drives+organizational+success+by+ensuring+that+IT+contributions+are+directly+aligned+with+business+needs+and+objectives.")});
+
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-f895c714f1eb48409abafda0692f676c", contenttype:"Folder"});
+								dataFolders.push({id:"id-f895c714f1eb48409abafda0692f676c", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-1c19e40f69bf40a6a63e8e488db28bdd", contenttype:"Folder"});
+								dataFolders.push({id:"id-1c19e40f69bf40a6a63e8e488db28bdd", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1c19e40f69bf40a6a63e8e488db28bdd", contentid:"id-62eac66805c1466b97292f2b353a88ab", contenttype:"Grouping"});
+										dataElements.push({id:"id-62eac66805c1466b97292f2b353a88ab", type:"Grouping", specialization:decodeURL(""), name:decodeURL("Biz+Cycle"), documentation:decodeURL("This+view+presents+the+ABBs+that+guide+the+development+of+a+software+product+with+BizDevOps.")});
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-0192a89002d74c2b8f809df650dde55b", contenttype:"Folder"});
+								dataFolders.push({id:"id-0192a89002d74c2b8f809df650dde55b", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-1894269b18cf4ef4b9723f54e736f338", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-1894269b18cf4ef4b9723f54e736f338", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL("assumes+the+responsibility+of"), documentation:decodeURL("%5BProduct+Owner%5D+assumes+the+responsibility+of+%5BAlignment+Manager%5D"), sourceid:"id-ba24775e8912429b9b818355f1091178", targetid:"id-b1434e76d07a4f5fbb869cf84fa88135"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-73969b3fab0644e3bab98cdf59ab7b92", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-73969b3fab0644e3bab98cdf59ab7b92", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL("composed+of"), documentation:decodeURL("%5BBizDevOps+Team%5D+compose+of+%5BAgility+Manager%5D"), sourceid:"id-5eeffa33a10d42e6a108fae50895163a", targetid:"id-3eb3511ac1f8430fba666aba30bcb99d"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-b8eb2f14ba8d448f9cc6481ca661d308", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-b8eb2f14ba8d448f9cc6481ca661d308", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL("composed+of"), documentation:decodeURL("%5BBizDevOps+Team%5D+compose+of+%5BDevOps+Roles%5D"), sourceid:"id-5eeffa33a10d42e6a108fae50895163a", targetid:"id-845548b9e75e489c8dcc1730322155cf"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-a182cc7439314ff4a1d6237dfe91cef9", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-a182cc7439314ff4a1d6237dfe91cef9", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL("composed+of"), documentation:decodeURL("%5BBizDevOps+Team%5D+compose+of+%5BProduct+Owner%5D"), sourceid:"id-5eeffa33a10d42e6a108fae50895163a", targetid:"id-ba24775e8912429b9b818355f1091178"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-8c7e5102fdc74bb4aafacd44157c4b91", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-8c7e5102fdc74bb4aafacd44157c4b91", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL("This+view+presents+the+ABBs+that+guide+the+development+of+a+software+product+with+BizDevOps."), sourceid:"id-0070e513b0e74057abd0a8d0602547d1", targetid:"id-3b205d293e4b4d3094d3775c4f150770"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-010f5792aa15471c845bae24230ea01e", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-010f5792aa15471c845bae24230ea01e", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-62eac66805c1466b97292f2b353a88ab", targetid:"id-0070e513b0e74057abd0a8d0602547d1"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-52773d67dd614a8a9ac20131ac19673e", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-52773d67dd614a8a9ac20131ac19673e", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-62eac66805c1466b97292f2b353a88ab", targetid:"id-3b205d293e4b4d3094d3775c4f150770"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-753e7f8fbef5472a911399cdb000c35d", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-753e7f8fbef5472a911399cdb000c35d", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-62eac66805c1466b97292f2b353a88ab", targetid:"id-ece86997eccc46e3b90ac177387995fa"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-418a8a3b0ad34a15ae3ae5bf2ff5e39e", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-418a8a3b0ad34a15ae3ae5bf2ff5e39e", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL("This+view+presents+the+ABBs+that+guide+the+development+of+a+software+product+with+BizDevOps."), sourceid:"id-0c7c2f1da1314458b2062675b392048e", targetid:"id-ece86997eccc46e3b90ac177387995fa"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-46d35422700b49daad64a959c3406eb9", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-46d35422700b49daad64a959c3406eb9", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-62eac66805c1466b97292f2b353a88ab", targetid:"id-0c7c2f1da1314458b2062675b392048e"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-686661ec80924b348d233482546edff5", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-686661ec80924b348d233482546edff5", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL("This+view+presents+the+ABBs+that+guide+the+development+of+a+software+product+with+BizDevOps."), sourceid:"id-ece86997eccc46e3b90ac177387995fa", targetid:"id-0070e513b0e74057abd0a8d0602547d1"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-3be214efa48641fe9ae05fe98d82b01f", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-3be214efa48641fe9ae05fe98d82b01f", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BContinuity+in+Everything%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-1abed5bd3e67417f8f0de6c2e93e6069", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-d0c2f71f33ec415ab0fe4819bed9e826", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-d0c2f71f33ec415ab0fe4819bed9e826", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BBusiness+First%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-361e6c29ffab455d8bbd67bcdd1d1e94", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-465064ac76734cd1bdafdbb497e0150e", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-465064ac76734cd1bdafdbb497e0150e", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BSystems+Thinking%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-c66ccf114f244c91bf3a6df946a8b670", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-87461caf5ec44658a13de168d1ba5ab8", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-87461caf5ec44658a13de168d1ba5ab8", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BAgility%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-b9d76b7a6f0d4d13b2c507a673d20644", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-c584e9ada338415493b948a2243ce753", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-c584e9ada338415493b948a2243ce753", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BIntegrated+Team%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-5df1c6bf04c54c91a03602783b55bf61", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-a2d1592080aa40f3b5bd7a47c6d54ed5", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-a2d1592080aa40f3b5bd7a47c6d54ed5", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BShift-Left%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-3ca68c30ccc341cc99e8d16940b738c5", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-f25d1e82826546c79a8411d846110f53", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-f25d1e82826546c79a8411d846110f53", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BCustomer+Focus%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-34fc77b18ea64672a388134054aef425", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-a20f5b0cbb224ceca3e231e7e689428f", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-a20f5b0cbb224ceca3e231e7e689428f", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL("%5BAlignment%5D+gives+realization+to+%5BBizDevOps+Principles%5D"), sourceid:"id-ca348c0a7eb948768562f80ea840494d", targetid:"id-0c691cb45adf49be9cf085b3105002b2"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-a4c1b2b221d04216aeaceaf1e5ee5f85", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-a4c1b2b221d04216aeaceaf1e5ee5f85", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL(""), sourceid:"id-fccc873de997443abead48e6ab45bbf9", targetid:"id-f387ac9d0371471c89eaa7fb27a63687"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-d199d8da04d94f0280ba32d6b34ce453", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-d199d8da04d94f0280ba32d6b34ce453", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL(""), sourceid:"id-a12f0f2e97c54273b114667accac2904", targetid:"id-f387ac9d0371471c89eaa7fb27a63687"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-58a5510fa99440e6a398bbe05a1cbdff", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-58a5510fa99440e6a398bbe05a1cbdff", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL(""), sourceid:"id-3f607ed7c9be450da38ec1cd1347f40b", targetid:"id-f387ac9d0371471c89eaa7fb27a63687"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-82c69a64e4904d38b97880a0b9cefbe1", contenttype:"SpecializationRelationship"});
+										dataRelationships.push({id:"id-82c69a64e4904d38b97880a0b9cefbe1", type:"SpecializationRelationship", specialization:decodeURL(""), name:decodeURL("specialization"), documentation:decodeURL(""), sourceid:"id-4bf5850777ec4befbee73ec503427d97", targetid:"id-f387ac9d0371471c89eaa7fb27a63687"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-701db55f4018428c9490f7a0de36cae0", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-701db55f4018428c9490f7a0de36cae0", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL("evaluates"), documentation:decodeURL("%5BAgility+is+Maintained%5D+evaluates+%5BAgile+Software+Development%5D"), sourceid:"id-a1912ec676bd44c4b84c1105c81a4eb6", targetid:"id-f1ec19d169dc437b8f0ee5fa75f4d97d"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-6b287bcf649240c3b4aaed0648ee81ac", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-6b287bcf649240c3b4aaed0648ee81ac", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL("evaluates"), documentation:decodeURL("%5BIT+and+business+are+aligned%5D+evaluates+%5BIT%2FBusiness+Alignment%5D"), sourceid:"id-36bd248edc284149acd9a0d4b0810ce2", targetid:"id-ca3b1dd3b004429a952f193a105f53c9"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-0bc66aa70c8b4ff0adf4e9afed3a1e41", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-0bc66aa70c8b4ff0adf4e9afed3a1e41", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-380f0be0391f4f439215cfd755033acb"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-8ded03eb2f064657899ad37511de4a97", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-8ded03eb2f064657899ad37511de4a97", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-69366da7c616408385533c4cd90cd0bf"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-fea894b6e5ef4cd399b2fee8c9bef3fb", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-fea894b6e5ef4cd399b2fee8c9bef3fb", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-f72fa3ba4b5b4fa8aec9d7a11f535e15"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-8d0d19c54bb64cc799b6051d118a1c6b", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-8d0d19c54bb64cc799b6051d118a1c6b", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-46ac65b15dc246ed876b13611775b715"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-9c471fd4909842a586f18289eba16e28", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-9c471fd4909842a586f18289eba16e28", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-af39b3f900eb42988747ebbde62e11f0"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-a09f0ac9a8764e4ab21d34c905567cf3", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-a09f0ac9a8764e4ab21d34c905567cf3", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-65177faab52248b383a9fed2d36732f0"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-9cd2f66709244e5d8d7fd3a3992cfa5e", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-9cd2f66709244e5d8d7fd3a3992cfa5e", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-c66f20b07418402b8aa9cf09a85f433f"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-5a6be95ca4be40abbc0317b806ec7b53", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-5a6be95ca4be40abbc0317b806ec7b53", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-b95eba89ef964dd195c5d0835f5dedad"});
+									dataFoldersContent.push({folderid:"id-0192a89002d74c2b8f809df650dde55b", contentid:"id-91c2253d615041b5a0150a540c799d98", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-91c2253d615041b5a0150a540c799d98", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", targetid:"id-d8a83a5b66254230ac7c5d5e6439796b"});
+
+								dataFoldersContent.push({folderid:"id-b814229a4fff4880a620fb8a1afa0535", contentid:"id-5a5c3517063d43fba0c3f6d3eb560644", contenttype:"Folder"});
+								dataFolders.push({id:"id-5a5c3517063d43fba0c3f6d3eb560644", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-5a5c3517063d43fba0c3f6d3eb560644", contentid:"id-82e903f78427498885e2da998633ec24", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-82e903f78427498885e2da998633ec24", type:"ArchimateDiagramModel", name:decodeURL("People"), documentation:decodeURL("The+%22People%22+component+details+the+essential+roles+within+the+BizDevOps+team.+While+these+roles+align+with+traditional+DevOps+positions%2C+there+is+a+significant+emphasis+on+certain+members+taking+on+new+responsibilities+to+better+integrate+business+and+operational+objectives+into+the+development+process.+")});
+														dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-3eb3511ac1f8430fba666aba30bcb99d", contenttype:"BusinessRole"});
+														dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-5eeffa33a10d42e6a108fae50895163a", contenttype:"BusinessRole"});
+														dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-b1434e76d07a4f5fbb869cf84fa88135", contenttype:"BusinessRole"});
+														dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-845548b9e75e489c8dcc1730322155cf", contenttype:"BusinessRole"});
+														dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-ba24775e8912429b9b818355f1091178", contenttype:"BusinessRole"});
+												
+
+																				dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-b8eb2f14ba8d448f9cc6481ca661d308", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-a182cc7439314ff4a1d6237dfe91cef9", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-73969b3fab0644e3bab98cdf59ab7b92", contenttype:"CompositionRelationship"});
+
+																				dataViewsContent.push({viewid:"id-82e903f78427498885e2da998633ec24", contentid:"id-1894269b18cf4ef4b9723f54e736f338", contenttype:"AggregationRelationship"});
+
+												
+
+									dataFoldersContent.push({folderid:"id-5a5c3517063d43fba0c3f6d3eb560644", contentid:"id-38bb8551dac8498aa082f09831a91faf", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-38bb8551dac8498aa082f09831a91faf", type:"ArchimateDiagramModel", name:decodeURL("Information"), documentation:decodeURL("Each+element+within+the+%22Information%22+component+is+pivotal+for+the+efficacious+deployment+of+BizDevOps+in+an+organizational+context%2C+accentuating+foundational+principles%2C+core+values%2C+and+critical+metrics.")});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-0c691cb45adf49be9cf085b3105002b2", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-ca348c0a7eb948768562f80ea840494d", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-b9d76b7a6f0d4d13b2c507a673d20644", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-5df1c6bf04c54c91a03602783b55bf61", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-361e6c29ffab455d8bbd67bcdd1d1e94", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-34fc77b18ea64672a388134054aef425", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-3ca68c30ccc341cc99e8d16940b738c5", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-1abed5bd3e67417f8f0de6c2e93e6069", contenttype:"Principle"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-c66ccf114f244c91bf3a6df946a8b670", contenttype:"Principle"});
+												
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-f387ac9d0371471c89eaa7fb27a63687", contenttype:"Value"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-fccc873de997443abead48e6ab45bbf9", contenttype:"Value"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-a12f0f2e97c54273b114667accac2904", contenttype:"Value"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-3f607ed7c9be450da38ec1cd1347f40b", contenttype:"Value"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-4bf5850777ec4befbee73ec503427d97", contenttype:"Value"});
+												
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-36bd248edc284149acd9a0d4b0810ce2", contenttype:"Driver"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-a1912ec676bd44c4b84c1105c81a4eb6", contenttype:"Driver"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-f1ec19d169dc437b8f0ee5fa75f4d97d", contenttype:"Assessment"});
+														dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-ca3b1dd3b004429a952f193a105f53c9", contenttype:"Assessment"});
+												
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-a20f5b0cbb224ceca3e231e7e689428f", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-87461caf5ec44658a13de168d1ba5ab8", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-c584e9ada338415493b948a2243ce753", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-d0c2f71f33ec415ab0fe4819bed9e826", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-f25d1e82826546c79a8411d846110f53", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-a2d1592080aa40f3b5bd7a47c6d54ed5", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-3be214efa48641fe9ae05fe98d82b01f", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-465064ac76734cd1bdafdbb497e0150e", contenttype:"SpecializationRelationship"});
+
+												
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-a4c1b2b221d04216aeaceaf1e5ee5f85", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-d199d8da04d94f0280ba32d6b34ce453", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-58a5510fa99440e6a398bbe05a1cbdff", contenttype:"SpecializationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-82c69a64e4904d38b97880a0b9cefbe1", contenttype:"SpecializationRelationship"});
+
+												
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-6b287bcf649240c3b4aaed0648ee81ac", contenttype:"AssociationRelationship"});
+
+																				dataViewsContent.push({viewid:"id-38bb8551dac8498aa082f09831a91faf", contentid:"id-701db55f4018428c9490f7a0de36cae0", contenttype:"AssociationRelationship"});
+
+												
+
+									dataFoldersContent.push({folderid:"id-5a5c3517063d43fba0c3f6d3eb560644", contentid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-c0c681f8de2b43c3b94d43da53f66b1c", type:"ArchimateDiagramModel", name:decodeURL("Resources"), documentation:decodeURL("This+component+details+the+set+of+resources+related+to+this+business+capability%2C+focusing+on+the+toolkit+designed+to+support+the+values+and+principles+of+the+BizDevOps+approach.+")});
+														dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-1b27e0b973c24b95bc09bdf8a3b262ac", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-c66f20b07418402b8aa9cf09a85f433f", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-f72fa3ba4b5b4fa8aec9d7a11f535e15", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-af39b3f900eb42988747ebbde62e11f0", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-46ac65b15dc246ed876b13611775b715", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-b95eba89ef964dd195c5d0835f5dedad", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-d8a83a5b66254230ac7c5d5e6439796b", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-380f0be0391f4f439215cfd755033acb", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-65177faab52248b383a9fed2d36732f0", contenttype:"TechnologyService"});
+																dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-69366da7c616408385533c4cd90cd0bf", contenttype:"TechnologyService"});
+														
+												
+
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-8ded03eb2f064657899ad37511de4a97", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-0bc66aa70c8b4ff0adf4e9afed3a1e41", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-fea894b6e5ef4cd399b2fee8c9bef3fb", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-8d0d19c54bb64cc799b6051d118a1c6b", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-5a6be95ca4be40abbc0317b806ec7b53", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-9cd2f66709244e5d8d7fd3a3992cfa5e", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-91c2253d615041b5a0150a540c799d98", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-9c471fd4909842a586f18289eba16e28", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contentid:"id-a09f0ac9a8764e4ab21d34c905567cf3", contenttype:"CompositionRelationship"});
+
+														
+												
+
+									dataFoldersContent.push({folderid:"id-5a5c3517063d43fba0c3f6d3eb560644", contentid:"id-60100b5aed8149e5866faea4f7a3bd0c", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-60100b5aed8149e5866faea4f7a3bd0c", type:"ArchimateDiagramModel", name:decodeURL("Processes"), documentation:decodeURL("The+%22Processes%22+component+is+crucial+for+aligning+and+optimizing+organizational+practices+throughout+the+software+lifecycle.+This+component+is+structured+around+standardized+processes+and+continuous+alignment+between+IT+and+business+strategies%2C+ensuring+that+operations+are+tailored+to+enhance+product+and+service+delivery.")});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-db7756a51fbc474daa1fa32c410291a3", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-d089ff3c4e79467a9b96800161b100df", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-af89f14cdcbe45f3ab7289c70e9a9749", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-68f35d925f854b448e1ca72660e37347", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-4faa450870e243159a025def9799f780", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-443807eff8e74e03a65b9db2cb6a5682", contenttype:"BusinessProcess"});
+														
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-445eeb87940c404da8fe335741c41811", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-878e1244395b4dd6b22671300dfc25b3", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-e1c0572ea00140059cf13d7422ad90f0", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-0d37a910c5a142a592418d4fc382d4f8", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-bc0826a815aa44b784eb755a5a37f08f", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-de2edfe1cea64a66aab72ada90793082", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-7144ff305259424690e27fc06e5e0d6e", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-411a082ca7f94c00be7bbe85ca30f980", contenttype:"BusinessProcess"});
+														
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-e03fdc4e73194406b13b3a8e9e0917e4", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-4da2a0ae351c4fe682b0dcd4e631e122", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-adcb163dd10047b18647a2f41ac20634", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-8fa03f7ea728477480d65e52276108ac", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-97db340517cf45369d4701f94bca7006", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-4b78442f32ff40b591bd9e16905d94b8", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-fcfb5fca6653427c9a6727c220fbc41f", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-5f71ce956b834bc7abe262df197c8455", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-a75012909fd046219a002bc7b79d29e4", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-35f1daa7511945939ca9709c2b0fa691", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-8f2889a736e24da08fedd3424043d81a", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-41066c95fe8243dba0da12c7faae96e3", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-b741609b50894caa9a1455cd61fe1b8b", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-f33ffedca68d4480aab84c730764772f", contenttype:"BusinessProcess"});
+														
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-c0c754bc3f0c444e8b1e5ef0b232703a", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-411c188042314e82b27a17c875980028", contenttype:"BusinessProcess"});
+														
+												
+														dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-62eac66805c1466b97292f2b353a88ab", contenttype:"Grouping"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-3b205d293e4b4d3094d3775c4f150770", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-0070e513b0e74057abd0a8d0602547d1", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-ece86997eccc46e3b90ac177387995fa", contenttype:"BusinessProcess"});
+																dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-0c7c2f1da1314458b2062675b392048e", contenttype:"BusinessProcess"});
+														
+												
+
+														
+														
+														
+														
+												
+																				dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-46d35422700b49daad64a959c3406eb9", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-010f5792aa15471c845bae24230ea01e", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-753e7f8fbef5472a911399cdb000c35d", contenttype:"CompositionRelationship"});
+																				dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-52773d67dd614a8a9ac20131ac19673e", contenttype:"CompositionRelationship"});
+
+																						dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-8c7e5102fdc74bb4aafacd44157c4b91", contenttype:"FlowRelationship"});
+
+																						dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-686661ec80924b348d233482546edff5", contenttype:"FlowRelationship"});
+
+																						dataViewsContent.push({viewid:"id-60100b5aed8149e5866faea4f7a3bd0c", contentid:"id-418a8a3b0ad34a15ae3ae5bf2ff5e39e", contenttype:"FlowRelationship"});
+
+														
+												
+
+									dataFoldersContent.push({folderid:"id-5a5c3517063d43fba0c3f6d3eb560644", contentid:"id-351800085738427280346337fd37325f", contenttype:"SketchModel"});
+										dataViews.push({id:"id-351800085738427280346337fd37325f", type:"SketchModel", name:decodeURL("BizDevOps+BC"), documentation:decodeURL("The+aim+of+BizDevOps-BC+is+to+facilitate+the+transition+for+companies+currently+employing+a+DevOps+approach+aspiring+to+progress+towards+BizDevOps.+BizDevOps-BC+offers+a+foundational+step+to+identify+the+requisite+elements+essential+for+achieving+IT%2FBusiness+alignment.+It+ensures+that+adopting+this+integrative+approach+does+not+compromise+the+agility+embedded+in+existing+practices.")});
+												dataViewsContent.push({viewid:"id-351800085738427280346337fd37325f", contentid:"id-38bb8551dac8498aa082f09831a91faf", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-351800085738427280346337fd37325f", contentid:"id-82e903f78427498885e2da998633ec24", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-351800085738427280346337fd37325f", contentid:"id-60100b5aed8149e5866faea4f7a3bd0c", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-351800085738427280346337fd37325f", contentid:"id-c0c681f8de2b43c3b94d43da53f66b1c", contenttype:"ArchimateDiagramModel"});
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
