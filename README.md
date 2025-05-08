@@ -12,8 +12,7 @@ The results and raw expert opinion data from the survey are in the [Excel file](
 
 ## Contacts
 
-Guillermo Fuentes-Quijada <[guillermo.fuentes@uclm](mailto:guillermo.fuentes@uclm?subject=BizDevOps-BC%20Research)>
-
-Francisco Ruiz-González <[francisco.ruizg@uclm](mailto:francisco.ruizg@uclm?subject=BizDevOps-BC%20Research)>
-
-Angélica Caro <[mcaro@ubiobio.cl](mailto:mcaro@ubiobio.cl?subject=BizDevOps-BC%20Research)>
+## Contacts
+- Guillermo Fuentes-Quijada <[guillermo.fuentes@uclm.es](mailto:guillermo.fuentes@uclm.es?subject=BizDevOps-BC%20Research)>
+- Francisco Ruiz-González <[francisco.ruizg@uclm.es](mailto:francisco.ruizg@uclm.es?subject=BizDevOps-BC%20Research)>
+- Angélica Caro <[mcaro@ubiobio.cl](mailto:mcaro@ubiobio.cl?subject=BizDevOps-BC%20Research)>
